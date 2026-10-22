@@ -1,368 +1,510 @@
 # Assignment 5 — V5 Mixture and Curriculum Plan
 
-## 1. Design hypothesis
+## Executive decision
 
-The V5 mixture should not follow raw corpus size. It should allocate enough tokens to each capability to move its target benchmark while respecting the real inventory behind that lane.
+This plan treats every mixture number as a **testable hypothesis**, not as a fixed truth.
 
-I assume a **2T-token main pretraining budget**.
+The total V5 training budget used here is **2.00T tokens**, split cleanly into:
 
-| Capability lane | Share | Tokens @ 2T | Primary evaluation |
+- **1.96T tokens (98%)** for the bulk curriculum
+- **40B tokens (2%)** protected for the final anneal / cooldown
+
+The bulk curriculum is allocated across seven capability lanes:
+
+| Capability lane | Bulk share | Tokens @ 1.96T | Primary benchmark / signal |
 |---|---:|---:|---|
-| General web / knowledge | **37%** | 740B | MMLU / broad held-out perplexity |
-| Code | **24%** | 480B | LiveCodeBench / coding pass@1 |
-| Indic | **14%** | 280B | MILU / IndicGenBench |
-| STEM / mathematics | **12%** | 240B | GPQA / math evaluation |
-| Reasoning traces | **6%** | 120B | reasoning exact-match / GPQA / math |
-| Long-context | **5%** | 100B | long-eval / retrieval accuracy |
-| Agentic / tool-use | **2%** | 40B | BFCL / SWE-style tool execution |
-| **Total** | **100%** | **2T** | |
+| General web / knowledge | **37%** | **725.2B** | MMLU / held-out perplexity |
+| Code | **24%** | **470.4B** | LiveCodeBench / code pass@1 |
+| Indic | **14%** | **274.4B** | MILU / Indic evaluation |
+| STEM / mathematics | **12%** | **235.2B** | GPQA / math exact-match |
+| Reasoning traces | **6%** | **117.6B** | math/reasoning exact-match |
+| Long-context | **5%** | **98.0B** | RULER / long-context retrieval |
+| Agentic / tool-use | **2%** | **39.2B** | BFCL / tau-bench / SWE-style execution |
+| **Bulk total** | **100%** | **1.96T** | |
 
-This mixture deliberately gives the abundant web and code lanes most of the budget while protecting scarce capabilities from disappearing.
+Then:
 
-The central constraint is whether the inventory can actually fund each lane.
+**1.96T bulk + 40B protected anneal = 2.00T total training budget.**
+
+The mixture deliberately gives abundant web and code data most of the budget while protecting scarce Indic, reasoning and agentic capabilities from being optimized away.
 
 ---
 
-## 2. Supply check
+## 1. Inventory supply check
 
-| Lane | Approx. inventory supply | Demand | Decision |
+The percentages above are constrained by the actual Session 5 inventory, not chosen independently of supply.
+
+| Lane | Inventory supply | Bulk demand | Supply conclusion |
 |---|---:|---:|---|
-| Web | ≥4.5T | 740B | Fully funded with unique data |
-| Code | ~1.1T | 480B | Fully funded with unique data |
-| Indic | ~276B total | 280B | Raw volume is close, but provenance constraints require selective repetition |
-| STEM / math | ~250B | 240B | Nearly saturates high-quality supply |
-| Reasoning | ~85B | 120B | **Starved:** ~35B gap; repetition or verified generation required |
-| Long-context | ~100B | 100B | At supply limit; aggressive filtering could create a deficit |
-| Agentic | ~0.63B real trajectories | 40B | **Severely starved:** cannot be achieved without generated/replayed trajectories |
+| General web + STEM pool | **~4.84T** | web 725.2B + STEM 235.2B | abundant |
+| Code | **~1.103T** | 470.4B | abundant |
+| Indic | **~275.9B** | 274.4B | essentially at supply limit |
+| Reasoning + math traces | **~85.1B** | 117.6B | **~32.5B deficit** |
+| Long-context | **~100B** | 98.0B | fits, but leaves almost no cleaning-loss margin |
+| Agentic / tool-use | **~0.6–0.63B** | 39.2B | **severely starved** |
 
-The **agentic lane is the binding constraint**. A 2% allocation already requires far more sampled tokens than currently available as real tool trajectories.
+### Inventory evidence used
 
-Therefore I do not allocate 5–10% agentic pretraining. That would mostly describe synthetic-data production rather than the current inventory.
+The Session 5 inventory numbers are represented in public cohort artifacts as:
 
----
+- General web + STEM: **4,837B**
+- Code: **1,103B**
+- Indic: **275.9B**
+- Long-context: **100B**
+- Reasoning + math: **85.1B**
+- Agentic: **~0.6B**
 
-## 3. Indic provenance budget
+Cross-check:
+- [Session 5 mined inventory numbers](https://github.com/millermuttu/ERA-V5/blob/main/Session5/reference/mined-numbers.md)
+- [Session 5 inventory configuration cross-check](https://github.com/iabh1shekbasu/mixture-curriculum/blob/main/config/inventory.yaml)
 
-A single "14% Indic" number hides the quality question, so the 280B Indic allocation is split into four explicit tiers.
+These links are used as a reproducible cross-check of the course inventory. The final implementation must use the cohort's authoritative Session 5 inventory/manifest values if they differ.
 
-| Indic tier | Share of Indic | Share of total run | Tokens |
-|---|---:|---:|---:|
-| **Verified native** | **35%** | 4.9% | 98B |
-| **Unverified native/crawl** | **15%** | 2.1% | 42B |
-| **Translated** | **15%** | 2.1% | 42B |
-| **Synthetic** | **35% max** | 4.9% | 98B |
-| **Total Indic** | **100%** | **14%** | **280B** |
+### What this means
 
-The synthetic tier is a **ceiling, not a target**. Unused synthetic budget is first replaced with additional verified native data, then high-quality unverified native data.
+The **agentic lane is the binding constraint**.
 
-All generated Indic records retain:
+A 2% agentic lane sounds small, but 39.2B requested tokens against only about 0.6B of real inventory means the target cannot honestly be reached from unique real trajectories. Most of this lane must therefore come from replayed or newly generated **executable and verified** trajectories.
 
-- source/teacher lineage,
-- target language and script,
-- generation method,
-- verifier status,
-- deduplication ancestry.
+Reasoning is the second constrained lane. Its 117.6B target exceeds the ~85.1B inventory, so it needs modest repetition and/or verified generation.
 
-Synthetic descendants of the same seed are not counted as independent diversity.
+Long-context is almost exactly supply-limited: aggressive cleaning could push the usable pool below the 98B target.
 
 ---
 
-## 4. Inventory → capability mapping
+## 2. Indic provenance split
 
-### General web
-Primary inventory:
-- FineWeb / FineWeb-Edu-class data
-- DCLM-style web data
+A headline number such as "14% Indic" is not sufficient because verified native, unverified native, translated and synthetic tokens are not equivalent.
 
-Purpose: world knowledge, language modelling, discourse, factual breadth.
+The **274.4B-token Indic bulk slot** is therefore split explicitly:
 
-### Code
-Primary inventory:
-- The Stack v2
-- D3 Code
-- CommitPack
-- repository documentation, commits and tests from the inventory
+| Indic tier | Share of Indic lane | Tokens | Policy |
+|---|---:|---:|---|
+| **Verified native** | **35%** | **96.0B** | highest priority; repeat only within repetition cap |
+| **Unverified native / crawl** | **15%** | **41.2B** | quality-selected + provenance retained |
+| **Translated** | **15%** | **41.2B** | translation lineage retained; source-side dedup required |
+| **Synthetic** | **35% maximum** | **96.0B max** | verifier-gated; ancestry tracked |
+| **Total** | **100%** | **274.4B** | |
 
-Purpose: code generation, repair and repository understanding.
+The **35% synthetic figure is a ceiling, not a target**. If additional verified native material survives cleaning, it replaces synthetic material first.
 
-### Indic
-Primary inventory:
-- Sangraha
-- verified native Indic sources
-- cleaned native crawl
-- translated tier
-- lineage-tracked synthetic tier
+### Indic inventory sources
 
-Purpose: MILU/IndicGenBench capability, Indian-language generation and code-mixed competence.
+The inventory is anchored by:
 
-### STEM / mathematics
-Primary inventory:
-- STEM subsets of the inventory
-- mathematics problem/solution corpora
-- scientific and technical text
+- **Sangraha verified** — ~64B
+- **Sangraha unverified** — ~24B
+- **Sangraha synthetic** — ~162–163B
+- **IndicCorpV2** — ~20.9B
+- **BPCC** — ~3B
+- **Samanantar** — ~2B
 
-Purpose: factual technical knowledge and the substrate required by reasoning training.
+For translated expansion, BPCC/Samanantar and IndicTrans-style generation can supply aligned examples, but translated and synthetic descendants remain separately tagged.
 
-### Reasoning
-Primary inventory:
-- verified math traces
-- code reasoning traces
-- general reasoning traces
-- generated traces retained only after answer verification
+Every generated/translated record must preserve:
 
-Reasoning supply is smaller than its 120B allocation, so high-quality traces may be replayed approximately 1.4× or the deficit must be produced using verifier-backed generation.
+- original source or seed ID
+- source language
+- target language/script
+- generation/translation method
+- teacher/model identity where applicable
+- verifier status
+- transformation lineage
+- deduplication ancestry
 
-### Long-context
-Primary inventory:
-- long books/documents
-- whole manuals
-- multi-document packs
-- long repositories
-
-The 100B target approximately exhausts currently identified supply. Cleaning losses therefore directly reduce this lane and must be monitored.
-
-### Agentic / tool-use
-Primary inventory:
-- ToolBench
-- Glaive function-calling data
-- ToolACE
-- xLAM/APIGen-class data
-- NexusRaven
-- Hermes function-calling data
-- SWE-style/OpenHands trajectories
-
-Real supply is far below the 40B target.
-
-The gap is filled only with **executable synthetic trajectories**. A generated trajectory is accepted when the tool schema is valid, actions can be replayed, and final environment state satisfies the task.
-
-Text that merely resembles a tool call does not qualify.
+A thousand descendants of one source document do **not** count as a thousand independent sources.
 
 ---
 
-## 5. Protected always-on floor
+## 3. Capability lane → exact inventory mapping
 
-Adaptive selection must not optimize away capabilities that look statistically unusual.
+### General web / knowledge — 725.2B
 
-| Protected lane | Minimum batch share |
+Inventory sources:
+
+- **DCLM**
+- **FineWeb-Edu**
+- compatible high-quality web/reference slices from the Session 5 inventory
+
+Purpose: broad knowledge, language modelling, discourse and factual breadth.
+
+Target signals: MMLU-family performance and general held-out perplexity.
+
+### Code — 470.4B
+
+Inventory sources:
+
+- **The Stack v2**
+- **D3/V4 code**
+- **CommitPack**
+- repository code, tests, commits and documentation represented in the inventory
+
+Purpose: code generation, repair, repository understanding and executable reasoning.
+
+Target signals: LiveCodeBench, code pass@1 and later SWE-style evaluation.
+
+### STEM / mathematics — 235.2B
+
+Inventory sources include:
+
+- **Proof-Pile**
+- **D4-STEM**
+- **peS2o**
+- technical/scientific subsets from the common inventory
+
+Purpose: technical knowledge and mathematical/scientific substrate.
+
+Target signals: GPQA and math exact-match.
+
+### Reasoning traces — 117.6B
+
+Exact inventory sources:
+
+- **AON/V4** — the dominant reasoning source
+- **OpenThoughts**
+- **OpenMath**
+- **OpenR1**
+- **Numina**
+
+The inventory provides ~85.1B against a 117.6B target.
+
+Required effective reuse/generation factor:
+
+`117.6 / 85.1 ≈ 1.38×`
+
+That is a modest shortfall compared with the agentic lane. Verified traces can therefore be selectively replayed, with generated traces admitted only when the final answer is checkable.
+
+For math: use symbolic/numeric answer verification.
+
+For code: compile/run tests.
+
+For factual reasoning: use answer/reference verification where available.
+
+### Long-context — 98.0B
+
+Exact inventory buckets:
+
+- **repo-packed long-context** — ~60B
+- **book-length long-context** — ~40B
+
+These are repacked/structured long sequences, not necessarily 100B of new unique semantic content.
+
+Because supply is ~100B and the target is 98B, this lane has effectively **no cleaning-loss margin**. If usable supply falls below target, I reduce the lane rather than fabricate long sequences merely to hit a percentage.
+
+Target signals: RULER / retrieval-under-long-context / needle-style and multi-document tasks.
+
+### Agentic / tool-use — 39.2B
+
+Inventory sources include:
+
+- **SWE-Gym** — ~150M
+- **SWE-smith** — ~120M
+- **OpenHands trajectories** — ~90M
+- **ToolBench** — ~80M
+- **ToolACE** — ~60M
+- **Glaive** — ~50M
+- **Nexus** — ~30M
+- **xLAM** — ~25M
+- **Hermes** — ~22M
+
+Total real inventory is only about **0.6B tokens**.
+
+Therefore the 39.2B target cannot be reached by repetition alone without destroying diversity.
+
+The expansion mechanism is **environment-grounded synthetic trajectory generation**:
+
+1. sample a real tool/environment/task;
+2. generate a multi-step trajectory;
+3. validate schema and permissions;
+4. replay the actions where possible;
+5. verify the final environment/test state;
+6. reject traces that only imitate tool syntax without succeeding.
+
+Target signals: BFCL, tau-bench, SWE-style execution success and recovery behavior.
+
+---
+
+## 4. Protected Always-On floor
+
+The selector is **not allowed** to reduce the following lanes below these batch-level floors:
+
+| Protected lane | Hard floor |
 |---|---:|
 | Indic | **12%** |
 | Reasoning | **4%** |
-| Agentic | **2%** |
-| **Total protected minimum** | **18%** |
+| Agentic / tools | **2%** |
+| **Protected minimum** | **18%** |
 
-These are floors, not target weights.
+These are floors, not desired averages.
 
-- Main Indic target = 14%, but the selector may never reduce it below 12%.
-- Agentic remains at its full 2% because tool traces can resemble templated/log data and may otherwise be rejected by generic quality selectors.
-- Reasoning receives a 4% floor so easy web/code loss does not eliminate difficult traces.
+- Indic target = 14%, but **never <12%**
+- Reasoning target = 6%, but **never <4%**
+- Agentic target = 2%, therefore **the entire lane is protected**
 
-The remaining sampling mass may be dynamically reweighted.
+Why protect them?
 
----
+Generic quality selection can systematically remove exactly the unusual structures we care about: low-resource scripts, long derivations, JSON/tool traces, failure/recovery steps and sparse multilingual examples.
 
-## 6. Anneal reserve
-
-I hold back **2% of the total budget = 40B tokens** for the final low-learning-rate anneal.
-
-These tokens are protected from early consumption.
-
-| Lane | Anneal share |
-|---|---:|
-| General high-quality web | 10% |
-| Code | 20% |
-| Verified Indic | 20% |
-| STEM | 10% |
-| Reasoning | 20% |
-| Long-context | 10% |
-| Agentic | 10% |
-
-The anneal deliberately differs from the main mixture.
-
-Abundant general web falls sharply, while scarce high-quality reasoning, verified Indic and agentic examples become more concentrated.
-
-No synthetic item enters the anneal simply because it is difficult; it must also pass its domain verifier.
+The remaining 82% of any batch may be adaptively redistributed subject to the overall curriculum.
 
 ---
 
-## 7. Curriculum
+## 5. Protected anneal reserve
 
-The curriculum changes both capability mixture and difficulty over time.
+The anneal reserve is **40B tokens = 2% of the total 2T budget**.
 
-### Stage 1 — language and representation foundation
-Emphasize general web, verified Indic and straightforward code.
+It is excluded from the 1.96T bulk accounting and cannot be consumed by the normal selector.
 
-Long-context and difficult reasoning remain low but non-zero.
+Proposed anneal composition:
 
-### Stage 2 — code + STEM
-Increase executable code, mathematics and technical documents.
+| Lane | Anneal share | Anneal tokens |
+|---|---:|---:|
+| High-quality general | 10% | 4B |
+| Code | 20% | 8B |
+| Verified Indic | 20% | 8B |
+| STEM | 10% | 4B |
+| Reasoning | 20% | 8B |
+| Long-context | 10% | 4B |
+| Agentic | 10% | 4B |
+| **Total** | **100%** | **40B** |
 
-Introduce medium-complexity reasoning.
+The cooldown intentionally shifts away from bulk web and toward high-confidence, high-value examples.
 
-### Stage 3 — reasoning
-Raise reasoning-trace exposure while preserving web/code/Indic floors.
-
-Hard examples increasingly replace easy duplicated examples.
-
-### Stage 4 — long-context + agentic
-Increase long sequences after the model has learned useful local representations.
-
-Introduce longer tool trajectories, recovery behavior and final-state verification.
-
-### Stage 5 — anneal
-Use the reserved 40B premium tokens at reduced learning rate.
-
-Transitions are blended rather than instantaneous so a curriculum boundary does not become an optimization discontinuity.
+No synthetic item is admitted merely because it is difficult. It must pass the lane-specific verifier.
 
 ---
 
-## 8. Difficulty bands
+## 6. Curriculum schedule
 
-Difficulty is attached as metadata and used by the sampler.
+The schedule changes both **what capability is sampled** and **how difficult/long the example is**.
 
-| Band | Interpretation | Concrete example |
+### Stage A — foundation
+
+Favor high-quality web, native Indic and straightforward code.
+
+Use mostly easy/medium examples while all protected floors remain active.
+
+### Stage B — code + STEM
+
+Increase executable code, math and technical documents.
+
+Introduce medium-depth reasoning.
+
+### Stage C — reasoning shaping
+
+Increase verified reasoning traces while keeping the Indic and agentic floors active.
+
+Prefer difficult examples only where verifier confidence remains high.
+
+### Stage D — long-context + agentic
+
+Increase repo-packed/book-length sequences and longer executable trajectories.
+
+Teach recovery, state tracking, error handling and multi-step completion rather than only single function calls.
+
+### Stage E — 40B anneal
+
+Consume only the protected premium reserve at reduced learning rate.
+
+All stage transitions should be blended rather than instantaneous to avoid a sharp distribution discontinuity.
+
+---
+
+## 7. Difficulty bands
+
+Difficulty is metadata used by the curriculum sampler.
+
+| Band | Definition | Concrete example |
 |---|---|---|
-| **D0 — foundational** | direct recognition/language | Translate a simple Telugu sentence into English |
-| **D1 — elementary** | one operation or fact | A bus has 40 seats. How many seats are in 3 buses? |
-| **D2 — intermediate** | several connected steps | Solve a quadratic equation and verify both roots |
-| **D3 — advanced** | undergraduate reasoning | Derive the gradient of softmax cross-entropy |
-| **D4 — expert** | several interacting concepts | Compare two attention implementations for memory and compute at 128K context |
-| **D5 — research / agentic** | open-ended diagnosis and verification | Diagnose a failing repository, modify the correct files, run tests and justify the fix |
+| **D0 — foundational** | direct language/recognition | Translate a simple Telugu sentence into English |
+| **D1 — elementary** | one operation or one fact | 40 seats × 3 buses |
+| **D2 — intermediate** | several dependent operations | Solve a quadratic and verify both roots |
+| **D3 — advanced** | undergraduate multi-concept reasoning | Derive the gradient of softmax cross-entropy |
+| **D4 — expert** | interacting systems / substantial analysis | Compare two attention implementations at 128K context for memory and compute |
+| **D5 — research/agentic** | open-ended diagnosis + verification | Inspect a failing repo, identify the bug, patch it, execute tests and verify the final state |
 
-Early training is dominated by D0–D2.
-
-D3–D5 rise gradually instead of appearing at one hard boundary.
+Early stages emphasize D0–D2. D3–D5 increase later without eliminating the easier distribution.
 
 ---
 
-## 9. Reasoning-length bands
+## 8. Reasoning-length bands
 
-Difficulty and reasoning length are independent.
+Difficulty and reasoning length are separate axes.
 
-| Band | Trace budget | Example behaviour |
+The curriculum uses four explicit reasoning-depth bands:
+
+| Band | Working trace budget | Concrete example |
 |---|---:|---|
-| **R0 Direct** | ≤128 tokens | answer or one obvious calculation |
-| **R1 Short** | 129–384 | several explicit operations |
-| **R2 Medium** | 385–1,024 | multi-stage derivation plus verification |
-| **R3 Long** | 1,025–4,096 | complex proof/debugging/planning |
-| **R4 Extended** | >4,096 | long-horizon agent/research task with intermediate validation |
+| **LOW** | **≤128 tokens** | Apply inclusion-exclusion directly to count integers divisible by 3 or 5 |
+| **MEDIUM** | **129–512** | Compute multiples of 3, 5 and 15 explicitly, combine them and perform a boundary check |
+| **HIGH** | **513–2,048** | For a harder algebra/algorithm problem, derive the solution, test alternatives and independently verify the result |
+| **ULTRA** | **2,049–4,096+** | Repository-level debugging: inspect multiple files, form hypotheses, patch code, run tests, recover from failures and verify final state |
 
-Example problem:
+The key rule is:
 
-> Find how many integers from 1 to 1000 are divisible by 3 or 5.
+> **Longer reasoning is not automatically better.**
 
-An R0 response can apply inclusion-exclusion directly.
+The trivial inclusion-exclusion problem should not be inflated into an ULTRA trace. ULTRA is reserved for tasks whose complexity genuinely requires long-horizon reasoning.
 
-An R1 version can show the three counts.
-
-An R2 version can derive the formula and verify boundaries.
-
-There is no justification for generating an R4 trace for this problem.
-
-Reasoning length is therefore sampled conditional on difficulty rather than rewarded monotonically.
+This prevents the curriculum from rewarding verbosity instead of correctness.
 
 ---
 
-## 10. Proxy experiments
+## 9. Proxy experiments — numbers remain hypotheses until tested
 
-Every percentage above is a hypothesis.
-
-I will not promote this mixture to the full V5 run until it survives both a **1B-parameter** and a **3B-parameter** proxy.
+No full-scale mixture decision is trusted before cheap matched-control experiments.
 
 ### Hypothesis
 
-> Protecting Indic, reasoning and agentic lanes improves those capabilities enough to justify their opportunity cost without materially degrading general language or coding.
+> Protecting Indic, reasoning and agentic lanes should improve those capabilities enough to justify their opportunity cost without materially degrading general language or coding.
 
 ### Arm A — supply-proportional baseline
-Sample mainly according to available corpus volume.
+
+Sample approximately according to usable post-cleaning supply.
 
 No protected floor.
 
-### Arm B — proposed V5 mixture
-Use:
+### Arm B — proposed mixture
+
+Use the proposed:
 
 `37 / 24 / 14 / 12 / 6 / 5 / 2`
 
-with the 12% Indic, 4% reasoning and 2% agentic floors.
+bulk mixture plus the Always-On floors.
 
-Architecture, tokenizer, optimizer, sequence length and training-token budget stay identical between arms.
+For a fair comparison, hold constant:
 
-### 1B proxy metrics
+- tokenizer
+- architecture
+- optimizer
+- learning-rate schedule
+- sequence length policy
+- training-token count
+- evaluation harness
+- checkpoint cadence
+
+### 1B proxy
+
+Train matched 1B-parameter models.
+
 Measure:
-- Indic held-out perplexity
-- MILU / Indic evaluation
-- coding pass@1
-- reasoning exact-match
-- BFCL-mini / tool-call success
-- long-context retrieval accuracy
+
 - general held-out perplexity
+- MILU / Indic held-out metrics
+- LiveCodeBench-style code pass@1
+- GPQA/math/reasoning exact-match
+- BFCL-mini/tool execution success
+- RULER/long-context retrieval
 
-The proposed mixture passes the first gate if:
+**Initial confirmation thresholds:**
+
 - Indic held-out PPL improves by **≥5% relative**
-- agentic/tool success improves by **≥8% relative**
 - reasoning accuracy improves by **≥5% relative**
-- code pass@1 falls by **<2 percentage points**
-- general validation PPL degrades by **<3%**
+- agentic/tool success improves by **≥8% relative**
+- code pass@1 regression is **<2 percentage points**
+- general held-out PPL degradation is **<3%**
+- long-context retrieval does not regress
 
-Otherwise the corresponding lane share is changed before the 3B run.
+Failure of these gates triggers a mixture adjustment before the next proxy.
 
 ### 3B proxy
-Repeat the comparison after incorporating only changes justified by the 1B result.
 
-The exact numerical improvement need not match the 1B proxy, but the **direction must reproduce**.
+Repeat the experiment at 3B after changing only the decisions justified by the 1B result.
 
-A mixture is accepted only when:
-1. protected capabilities improve at both scales,
-2. neither code nor general language shows a material regression,
-3. curriculum transitions remain optimization-stable,
-4. observed gain per sampled token justifies repeating or synthesizing scarce data.
+The exact effect size need not be identical, but the important capability gains must reproduce in the **same direction**.
 
-If the 1B gain disappears at 3B, the 1B result is treated as scale-specific noise rather than evidence for full-scale allocation.
+Promotion to full scale requires:
 
----
+1. Indic, reasoning and agentic gains at both scales;
+2. no material general/code regression;
+3. no instability at curriculum transitions;
+4. measurable return per added/repeated/synthetic token;
+5. no evidence that synthetic expansion improves formatting without improving task success.
 
-## 11. Falsification criteria
-
-I will reduce or redesign a lane if:
-
-- Indic improvement saturates despite repeated exposure;
-- synthetic Indic performs worse than native-data repetition;
-- agentic synthetic trajectories improve formatting but not executable success;
-- reasoning traces increase answer length without increasing correctness;
-- long-context training reduces short-context quality without improving retrieval;
-- a lane's benchmark improvement is smaller than the regression created elsewhere.
-
-This makes the mixture falsifiable rather than aspirational.
+A gain that appears at 1B and disappears or reverses at 3B is treated as scale-specific noise, not validation.
 
 ---
 
-## 12. Cleaning priority
+## 10. Falsification rules
 
-Cleaning effort now follows scarcity, not raw corpus size.
+I will change the proposed numbers if any of the following occurs:
 
-1. **Agentic:** executable/replayable trajectories, schema validation, final-state verification.
-2. **Reasoning:** answer verification, difficulty tags, reasoning-length tags, contamination checks.
-3. **Indic verified/native:** script-aware normalization, provenance, deduplication and benchmark decontamination.
-4. **Long-context:** document completeness, cross-document deduplication and sequence-quality checks.
-5. **STEM:** equation/code/citation validation.
-6. **Code and web:** continue normal cleaning, but do not consume most cleaning capacity simply because these corpora are largest.
+- Indic gains saturate while repetition rises;
+- translated/synthetic Indic underperforms native repetition;
+- agentic synthesis improves function-call formatting but not executable success;
+- reasoning data increases response length without increasing correctness;
+- long-context data hurts short-context performance without improving long-context retrieval;
+- a protected lane's gain is smaller than the regression it creates elsewhere.
 
-The next cleaned billion tokens should preferentially come from the lanes whose real supply is furthest below target.
+This is what makes the mixture a falsifiable training hypothesis rather than a presentation target.
 
 ---
 
-## 13. Final commitments
+## 11. Data-gating and cleaning evidence
+
+The mixture is valid only if cleaned, documented tokens actually exist behind it.
+
+The data gate is therefore separate from the mixture proposal.
+
+For every cleaned shard, the manifest must retain at least:
+
+- source
+- licence
+- cleaning-script hash
+- content hash
+- token count
+- language(s)
+
+### Current rule
+
+**Do not claim the data gate is complete unless the cumulative cleaned-token threshold and manifests can be linked from this repository.**
+
+When that evidence is available, it should be linked here under:
+
+`Session-5/Assignment-5/evidence/`
+
+or to the authoritative earlier-session data-cleaning artifact.
+
+### Cleaning priority implied by this mixture
+
+Cleaning effort should follow **scarcity**, not raw corpus size:
+
+1. **Agentic** — replayable/executable trajectories, schema validation, final-state checks
+2. **Reasoning** — answer verification, difficulty tags, reasoning-length tags
+3. **Verified/native Indic** — provenance, script-aware normalization, deduplication
+4. **Long-context** — document completeness, packing quality, cross-document deduplication
+5. **STEM** — equations, citations and answer validation
+6. **Code/web** — continue cleaning, but do not let their abundance consume all cleaning capacity
+
+The next cleaned tokens should preferentially target lanes where usable supply falls furthest below the planned mixture.
+
+---
+
+## 12. Final commitments
 
 | Decision | Commitment |
 |---|---|
-| Main capability mix | **37 / 24 / 14 / 12 / 6 / 5 / 2** |
-| Indic provenance | **35 / 15 / 15 / 35 max** verified / unverified / translated / synthetic |
-| Protected floor | **12% Indic + 4% reasoning + 2% agentic** |
-| Anneal reserve | **40B / 2%** |
-| Main supply risk | **Agentic** |
-| Secondary supply risk | **Reasoning** |
-| Proxy requirement | **1B and 3B matched-control experiments** |
-| Promotion rule | Same beneficial direction at both scales with no major core regression |
+| Total training budget | **2.00T** |
+| Bulk curriculum | **1.96T / 98%** |
+| Protected anneal | **40B / 2%** |
+| Bulk capability mix | **37 / 24 / 14 / 12 / 6 / 5 / 2** |
+| Indic provenance split | **35 / 15 / 15 / ≤35** verified / unverified / translated / synthetic |
+| Always-On floor | **Indic 12% + reasoning 4% + agentic 2%** |
+| Most supply-starved lane | **Agentic** |
+| Second supply constraint | **Reasoning** |
+| Long-context policy | **cap at usable real/repacked supply; do not fabricate quota** |
+| Proxy requirement | **matched 1B then 3B experiments** |
+| Promotion rule | gains reproduce at both scales without material core regression |
+| Data-gating rule | no "complete" claim without cleaned-token manifests/evidence |
 
-The mixture is not trusted because the percentages look reasonable.
+## Bottom line
 
-It is trusted only when the inventory can fund them and proxy runs show that the sampled tokens actually purchase the intended capability.
+The numbers in this document are not trusted because they add to 100%.
+
+They are trusted only if:
+
+1. the cleaned inventory can fund them,
+2. repetition/synthetic generation is declared wherever supply is insufficient,
+3. protected floors prevent scarce capabilities from disappearing,
+4. the anneal reserve remains genuinely held back, and
+5. the 1B and 3B proxy experiments show that the proposed token allocation buys the intended capability.

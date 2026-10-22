@@ -1,0 +1,31 @@
+shards created
+[PASS] tokenizer_hash_verified
+manifests validated
+[PASS] eval_shard_blocked
+evaluation data blocked
+[PASS] training_lanes_present
+[PASS] curriculum_floors_foundation
+[PASS] curriculum_floors_reasoning_focus
+mixture compiled
+batches packed
+[PASS] packing_masks_positions_verified
+OPUS decisions recorded
+checkpoint saved offset=3 path=checkpoints/before_crash.json
+[PASS] checkpoint_saved
+crash simulated: process interrupted before batch-3
+[PASS] checkpoint_ledger_offset_verified
+[PASS] resume_next_batch_matched
+run resumed
+[PASS] no_skipped_or_repeated_batches
+[PASS] training_lanes_present
+[PASS] curriculum_floors_foundation
+[PASS] curriculum_floors_reasoning_focus
+mixture compiled
+batches packed
+[PASS] replay_hash_matched
+historical stream replayed
+branch forked
+checkpoint saved offset=6 path=checkpoints/final.json
+performance measured
+[PASS] audit_completed
+audit completed

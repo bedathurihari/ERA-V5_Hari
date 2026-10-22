@@ -1,0 +1,33 @@
+name: Publish Session 8 Attention Atlas
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'Session-8/Assignment-8/**'
+      - '.github/workflows/session-8-attention-pages.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+concurrency:
+  group: pages-session8
+  cancel-in-progress: true
+jobs:
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
+      - name: Upload Session 8 site
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: Session-8/Assignment-8
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

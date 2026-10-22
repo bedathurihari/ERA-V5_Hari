@@ -1,0 +1,192 @@
+{
+  "plan": [
+    {
+      "batch_index": 0,
+      "lane": "indic",
+      "shard_id": "indic-00",
+      "stage": "foundation"
+    },
+    {
+      "batch_index": 1,
+      "lane": "general",
+      "shard_id": "general-00",
+      "stage": "foundation"
+    },
+    {
+      "batch_index": 2,
+      "lane": "reasoning",
+      "shard_id": "reasoning-00",
+      "stage": "foundation"
+    },
+    {
+      "batch_index": 3,
+      "lane": "agentic",
+      "shard_id": "agentic-00",
+      "stage": "foundation"
+    },
+    {
+      "batch_index": 4,
+      "lane": "indic",
+      "shard_id": "indic-01",
+      "stage": "foundation"
+    },
+    {
+      "batch_index": 5,
+      "lane": "long_context",
+      "shard_id": "long_context-00",
+      "stage": "foundation"
+    },
+    {
+      "batch_index": 6,
+      "lane": "general",
+      "shard_id": "general-02",
+      "stage": "foundation"
+    },
+    {
+      "batch_index": 7,
+      "lane": "reasoning",
+      "shard_id": "reasoning-01",
+      "stage": "foundation"
+    },
+    {
+      "batch_index": 8,
+      "lane": "indic",
+      "shard_id": "indic-02",
+      "stage": "foundation"
+    },
+    {
+      "batch_index": 9,
+      "lane": "agentic",
+      "shard_id": "agentic-01",
+      "stage": "foundation"
+    },
+    {
+      "batch_index": 10,
+      "lane": "general",
+      "shard_id": "general-03",
+      "stage": "foundation"
+    },
+    {
+      "batch_index": 11,
+      "lane": "indic",
+      "shard_id": "indic-04",
+      "stage": "foundation"
+    },
+    {
+      "batch_index": 12,
+      "lane": "indic",
+      "shard_id": "indic-05",
+      "stage": "capability"
+    },
+    {
+      "batch_index": 13,
+      "lane": "reasoning",
+      "shard_id": "reasoning-02",
+      "stage": "capability"
+    },
+    {
+      "batch_index": 14,
+      "lane": "agentic",
+      "shard_id": "agentic-02",
+      "stage": "capability"
+    },
+    {
+      "batch_index": 15,
+      "lane": "long_context",
+      "shard_id": "long_context-01",
+      "stage": "capability"
+    },
+    {
+      "batch_index": 16,
+      "lane": "general",
+      "shard_id": "general-04",
+      "stage": "capability"
+    },
+    {
+      "batch_index": 17,
+      "lane": "indic",
+      "shard_id": "indic-06",
+      "stage": "capability"
+    },
+    {
+      "batch_index": 18,
+      "lane": "reasoning",
+      "shard_id": "reasoning-03",
+      "stage": "capability"
+    },
+    {
+      "batch_index": 19,
+      "lane": "agentic",
+      "shard_id": "agentic-03",
+      "stage": "capability"
+    },
+    {
+      "batch_index": 20,
+      "lane": "long_context",
+      "shard_id": "long_context-02",
+      "stage": "capability"
+    },
+    {
+      "batch_index": 21,
+      "lane": "indic",
+      "shard_id": "indic-07",
+      "stage": "capability"
+    },
+    {
+      "batch_index": 22,
+      "lane": "reasoning",
+      "shard_id": "reasoning-04",
+      "stage": "capability"
+    },
+    {
+      "batch_index": 23,
+      "lane": "general",
+      "shard_id": "general-05",
+      "stage": "capability"
+    }
+  ],
+  "stages": [
+    {
+      "actual": {
+        "agentic": 0.16666666666666666,
+        "general": 0.25,
+        "indic": 0.3333333333333333,
+        "long_context": 0.08333333333333333,
+        "reasoning": 0.16666666666666666
+      },
+      "floor": {
+        "indic": 0.2,
+        "reasoning": 0.1
+      },
+      "planned": {
+        "agentic": 0.15,
+        "general": 0.25,
+        "indic": 0.3,
+        "long_context": 0.1,
+        "reasoning": 0.2
+      },
+      "stage": "foundation"
+    },
+    {
+      "actual": {
+        "agentic": 0.16666666666666666,
+        "general": 0.16666666666666666,
+        "indic": 0.25,
+        "long_context": 0.16666666666666666,
+        "reasoning": 0.25
+      },
+      "floor": {
+        "indic": 0.2,
+        "reasoning": 0.1
+      },
+      "planned": {
+        "agentic": 0.2,
+        "general": 0.15,
+        "indic": 0.25,
+        "long_context": 0.15,
+        "reasoning": 0.25
+      },
+      "stage": "capability"
+    }
+  ]
+}

@@ -1,0 +1,86 @@
+{
+  "ledger_offsets": {
+    "consumption": 24,
+    "learning": 24
+  },
+  "overall_pass": true,
+  "performance": {
+    "batches": 24,
+    "capacity_tokens": 384,
+    "occupied_tokens": 384,
+    "packing_utilization": 1.0,
+    "useful_loss_tokens": 360,
+    "useful_loss_tokens_per_second": 15126.1495663568,
+    "wall_seconds": 0.02379984400000268
+  },
+  "replay": {
+    "interval": [
+      3,
+      8
+    ],
+    "matching_hashes": true
+  },
+  "requirements": {
+    "Checkpoint": {
+      "evidence": "checkpoints/final.json",
+      "passed": true,
+      "result": "PASS"
+    },
+    "Crash recovery": {
+      "evidence": "checkpoints/precrash.json; ledgers/consumption.json",
+      "passed": true,
+      "result": "PASS"
+    },
+    "Evaluation firewall": {
+      "evidence": "ledgers/blocked_shards.json",
+      "passed": true,
+      "result": "PASS"
+    },
+    "Fork": {
+      "evidence": "ledgers/fork.json",
+      "passed": true,
+      "result": "PASS"
+    },
+    "Learning trace": {
+      "evidence": "ledgers/learning.json",
+      "passed": true,
+      "result": "PASS"
+    },
+    "Mixture compliance": {
+      "evidence": "mixture.json",
+      "passed": true,
+      "result": "PASS"
+    },
+    "OPUS audit trail": {
+      "evidence": "ledgers/opus.json",
+      "passed": true,
+      "result": "PASS"
+    },
+    "Packing correctness": {
+      "evidence": "ledgers/batch_catalog.json",
+      "passed": true,
+      "result": "PASS"
+    },
+    "Replay": {
+      "evidence": "ledgers/replay.json",
+      "passed": true,
+      "result": "PASS"
+    },
+    "Throughput": {
+      "evidence": "performance.json",
+      "passed": true,
+      "result": "PASS"
+    },
+    "Tokenizer integrity": {
+      "evidence": "manifests/; tokenizer.json",
+      "passed": true,
+      "result": "PASS"
+    }
+  },
+  "resume": {
+    "actual_batch_id": "batch-0010",
+    "actual_hash": "d19b685717937c3741b5a50f10d36c46677856b64d3e67c19634ee9d9233a2a4",
+    "expected_batch_id": "batch-0010",
+    "expected_hash": "d19b685717937c3741b5a50f10d36c46677856b64d3e67c19634ee9d9233a2a4"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "alternative_lr": 0.03,
+  "batches": [
+    {
+      "batch_id": "batch-0010",
+      "hash": "d19b685717937c3741b5a50f10d36c46677856b64d3e67c19634ee9d9233a2a4",
+      "loss": 0.29389271994220006
+    },
+    {
+      "batch_id": "batch-0011",
+      "hash": "4792f49c99a14909e96a953d0ddb0f50916ca0e6f22c93c826eae49f0322e487",
+      "loss": 0.3130240829956366
+    },
+    {
+      "batch_id": "batch-0012",
+      "hash": "fa92c2d69c45fa22410826d261ce1cc09aa1bec129d0a93c87c5d54f78c695e2",
+      "loss": 0.31328289358481337
+    }
+  ],
+  "branched_model_hash": "c5980e390c4103096e37f99fcc990ac93dbc1fad137b245ab438030f0cfae39b",
+  "parent_checkpoint": "checkpoints/precrash.json"
+}

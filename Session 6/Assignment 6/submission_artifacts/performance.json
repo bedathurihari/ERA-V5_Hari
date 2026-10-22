@@ -1,0 +1,9 @@
+{
+  "batches": 24,
+  "capacity_tokens": 384,
+  "occupied_tokens": 384,
+  "packing_utilization": 1.0,
+  "useful_loss_tokens": 360,
+  "useful_loss_tokens_per_second": 15126.1495663568,
+  "wall_seconds": 0.02379984400000268
+}

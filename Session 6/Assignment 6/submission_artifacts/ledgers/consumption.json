@@ -1,0 +1,314 @@
+[
+  {
+    "batch_hash": "42ee16a653522c6b41e5eced30bffd4671449bbfc482a14b504aaf5acb69caa6",
+    "batch_id": "batch-0000",
+    "lane": "indic",
+    "offset": 0,
+    "shard_id": "indic-00",
+    "span": [
+      0,
+      16
+    ],
+    "tokens": 16,
+    "useful_tokens": 15
+  },
+  {
+    "batch_hash": "92777ce73e4d1b193366cf079ad3b3abf2b3b0c71cb74afd9a153e17d437d958",
+    "batch_id": "batch-0001",
+    "lane": "general",
+    "offset": 1,
+    "shard_id": "general-00",
+    "span": [
+      0,
+      16
+    ],
+    "tokens": 16,
+    "useful_tokens": 15
+  },
+  {
+    "batch_hash": "c1174ce8a1d207735e75ef5cfbd0af232095e0282a9d22167b053caeed9ccb0b",
+    "batch_id": "batch-0002",
+    "lane": "reasoning",
+    "offset": 2,
+    "shard_id": "reasoning-00",
+    "span": [
+      0,
+      16
+    ],
+    "tokens": 16,
+    "useful_tokens": 15
+  },
+  {
+    "batch_hash": "91d50491a8d4295fbc6421cf60b2b1c110617603ad87737df424afa72afde6d8",
+    "batch_id": "batch-0003",
+    "lane": "agentic",
+    "offset": 3,
+    "shard_id": "agentic-00",
+    "span": [
+      0,
+      16
+    ],
+    "tokens": 16,
+    "useful_tokens": 15
+  },
+  {
+    "batch_hash": "aa9172f09e4349fe76b00df036abaafb7b8c56873351896950988470b6798d68",
+    "batch_id": "batch-0004",
+    "lane": "indic",
+    "offset": 4,
+    "shard_id": "indic-01",
+    "span": [
+      0,
+      16
+    ],
+    "tokens": 16,
+    "useful_tokens": 15
+  },
+  {
+    "batch_hash": "d2e56ee9b8b592a2e0d32b694f8aa65d3f7a62725f0eae69f74a9a3881a9d1ed",
+    "batch_id": "batch-0005",
+    "lane": "long_context",
+    "offset": 5,
+    "shard_id": "long_context-00",
+    "span": [
+      0,
+      16
+    ],
+    "tokens": 16,
+    "useful_tokens": 15
+  },
+  {
+    "batch_hash": "e52be48fda86d3ba9850d47affc5d688625d110ccb9deb0d548a9b935ec8c73f",
+    "batch_id": "batch-0006",
+    "lane": "general",
+    "offset": 6,
+    "shard_id": "general-02",
+    "span": [
+      0,
+      16
+    ],
+    "tokens": 16,
+    "useful_tokens": 15
+  },
+  {
+    "batch_hash": "b276bb30aa98ce2f2ffe5571a10488415a36a4ce8e2a42a6a28e13776254270d",
+    "batch_id": "batch-0007",
+    "lane": "reasoning",
+    "offset": 7,
+    "shard_id": "reasoning-01",
+    "span": [
+      0,
+      16
+    ],
+    "tokens": 16,
+    "useful_tokens": 15
+  },
+  {
+    "batch_hash": "12ceee498414930080ff38f450212af442ac315523b54da0ecb49036167521fa",
+    "batch_id": "batch-0008",
+    "lane": "indic",
+    "offset": 8,
+    "shard_id": "indic-02",
+    "span": [
+      0,
+      16
+    ],
+    "tokens": 16,
+    "useful_tokens": 15
+  },
+  {
+    "batch_hash": "b9874698f48ee763336e282d6f7e02b98faec3932d1205d42c163236d20787ca",
+    "batch_id": "batch-0009",
+    "lane": "agentic",
+    "offset": 9,
+    "shard_id": "agentic-01",
+    "span": [
+      0,
+      16
+    ],
+    "tokens": 16,
+    "useful_tokens": 15
+  },
+  {
+    "batch_hash": "d19b685717937c3741b5a50f10d36c46677856b64d3e67c19634ee9d9233a2a4",
+    "batch_id": "batch-0010",
+    "lane": "general",
+    "offset": 10,
+    "shard_id": "general-03",
+    "span": [
+      0,
+      16
+    ],
+    "tokens": 16,
+    "useful_tokens": 15
+  },
+  {
+    "batch_hash": "4792f49c99a14909e96a953d0ddb0f50916ca0e6f22c93c826eae49f0322e487",
+    "batch_id": "batch-0011",
+    "lane": "indic",
+    "offset": 11,
+    "shard_id": "indic-04",
+    "span": [
+      0,
+      16
+    ],
+    "tokens": 16,
+    "useful_tokens": 15
+  },
+  {
+    "batch_hash": "fa92c2d69c45fa22410826d261ce1cc09aa1bec129d0a93c87c5d54f78c695e2",
+    "batch_id": "batch-0012",
+    "lane": "indic",
+    "offset": 12,
+    "shard_id": "indic-05",
+    "span": [
+      0,
+      16
+    ],
+    "tokens": 16,
+    "useful_tokens": 15
+  },
+  {
+    "batch_hash": "9e01a1322d088b4ef3992563a52fd0867ae93fe5a16f984a6c63a4ccc65c472c",
+    "batch_id": "batch-0013",
+    "lane": "reasoning",
+    "offset": 13,
+    "shard_id": "reasoning-02",
+    "span": [
+      0,
+      16
+    ],
+    "tokens": 16,
+    "useful_tokens": 15
+  },
+  {
+    "batch_hash": "6f82197142b4a54bc08899e4d3a5f6520ad8acfe716a376c45dcb344f2051afa",
+    "batch_id": "batch-0014",
+    "lane": "agentic",
+    "offset": 14,
+    "shard_id": "agentic-02",
+    "span": [
+      0,
+      16
+    ],
+    "tokens": 16,
+    "useful_tokens": 15
+  },
+  {
+    "batch_hash": "5e67ed9be56aba0744d0401ff395361b09298abe3ed3f8dce02c6ba10fafca51",
+    "batch_id": "batch-0015",
+    "lane": "long_context",
+    "offset": 15,
+    "shard_id": "long_context-01",
+    "span": [
+      0,
+      16
+    ],
+    "tokens": 16,
+    "useful_tokens": 15
+  },
+  {
+    "batch_hash": "3fc8ab0a41d7942060094243132e7da35e62c2e902e561f6df2eacd19cc59b9b",
+    "batch_id": "batch-0016",
+    "lane": "general",
+    "offset": 16,
+    "shard_id": "general-04",
+    "span": [
+      0,
+      16
+    ],
+    "tokens": 16,
+    "useful_tokens": 15
+  },
+  {
+    "batch_hash": "98af4ed6d07c947b5cc3f808d668d1f6879163b97125f91ca35d449bad59bb6c",
+    "batch_id": "batch-0017",
+    "lane": "indic",
+    "offset": 17,
+    "shard_id": "indic-06",
+    "span": [
+      0,
+      16
+    ],
+    "tokens": 16,
+    "useful_tokens": 15
+  },
+  {
+    "batch_hash": "acb8b66d8e67d70bbf92dd5c8d9fef8a808d808147c5c42d1c5cbc940c3dc930",
+    "batch_id": "batch-0018",
+    "lane": "reasoning",
+    "offset": 18,
+    "shard_id": "reasoning-03",
+    "span": [
+      0,
+      16
+    ],
+    "tokens": 16,
+    "useful_tokens": 15
+  },
+  {
+    "batch_hash": "d5292f24054d9072ee133a0ff18967ab80538a3fac25c7db1e6cc4b23f096449",
+    "batch_id": "batch-0019",
+    "lane": "agentic",
+    "offset": 19,
+    "shard_id": "agentic-03",
+    "span": [
+      0,
+      16
+    ],
+    "tokens": 16,
+    "useful_tokens": 15
+  },
+  {
+    "batch_hash": "39e61c717246df74fdc9c0502b4804c21e6c7cc79e4fbf0c72f6eb5fb5c2f1f1",
+    "batch_id": "batch-0020",
+    "lane": "long_context",
+    "offset": 20,
+    "shard_id": "long_context-02",
+    "span": [
+      0,
+      16
+    ],
+    "tokens": 16,
+    "useful_tokens": 15
+  },
+  {
+    "batch_hash": "21a961ed522aa775407140a6d6461c7621395a82cca4b3c4a13efd921e78334a",
+    "batch_id": "batch-0021",
+    "lane": "indic",
+    "offset": 21,
+    "shard_id": "indic-07",
+    "span": [
+      0,
+      16
+    ],
+    "tokens": 16,
+    "useful_tokens": 15
+  },
+  {
+    "batch_hash": "c378b06ade899899113af250374c4eed20303e70a082eff4126a5d6e3653450c",
+    "batch_id": "batch-0022",
+    "lane": "reasoning",
+    "offset": 22,
+    "shard_id": "reasoning-04",
+    "span": [
+      0,
+      16
+    ],
+    "tokens": 16,
+    "useful_tokens": 15
+  },
+  {
+    "batch_hash": "2334f962fbe3539486a2fe48e8cba45f5845393d7710ffc343e14980662248e4",
+    "batch_id": "batch-0023",
+    "lane": "general",
+    "offset": 23,
+    "shard_id": "general-05",
+    "span": [
+      0,
+      16
+    ],
+    "tokens": 16,
+    "useful_tokens": 15
+  }
+]

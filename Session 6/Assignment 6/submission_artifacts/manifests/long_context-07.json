@@ -1,0 +1,16 @@
+{
+  "cleaning_script_hash": "23d54d56a22aae74c37da00b44e90b8c1a3a6e8eea5ec33ebc083ae3865db55c",
+  "content_hash": "f4c9c6944a0432296319c2d6fe19fbc83df8675de33d10d640622d19cb03a936",
+  "id": "long_context-07",
+  "lane": "long_context",
+  "languages": [
+    "en"
+  ],
+  "license": "CC0-1.0",
+  "path": "shards/train/long_context-07.json",
+  "source": "fixture:long_context",
+  "split": "train",
+  "tier": "native",
+  "token_count": 33,
+  "tokenizer_hash": "e87fb6e50b23b3d141c31992441f7c2cbf6034077573439de4710513cf49c746"
+}

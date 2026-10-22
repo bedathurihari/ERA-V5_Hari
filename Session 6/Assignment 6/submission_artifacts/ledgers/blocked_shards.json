@@ -1,0 +1,26 @@
+[
+  {
+    "decision": "BLOCK",
+    "id": "eval-0",
+    "reason": "heldout_firewall",
+    "split": "eval"
+  },
+  {
+    "decision": "BLOCK",
+    "id": "eval-1",
+    "reason": "heldout_firewall",
+    "split": "eval"
+  },
+  {
+    "decision": "BLOCK",
+    "id": "validation-0",
+    "reason": "heldout_firewall",
+    "split": "validation"
+  },
+  {
+    "decision": "BLOCK",
+    "id": "validation-1",
+    "reason": "heldout_firewall",
+    "split": "validation"
+  }
+]

@@ -1,0 +1,562 @@
+[
+  {
+    "decision": "ACCEPT",
+    "id": "indic-00",
+    "lane": "indic",
+    "reason": "quality_gate",
+    "tier": "verified"
+  },
+  {
+    "decision": "OVERRIDE_ACCEPT",
+    "id": "indic-01",
+    "lane": "indic",
+    "reason": "indic_protected_floor",
+    "tier": "unverified"
+  },
+  {
+    "decision": "ACCEPT",
+    "id": "indic-02",
+    "lane": "indic",
+    "reason": "quality_gate",
+    "tier": "translated"
+  },
+  {
+    "decision": "REJECT",
+    "id": "indic-03",
+    "lane": "indic",
+    "reason": "synthetic_quality",
+    "tier": "synthetic"
+  },
+  {
+    "decision": "ACCEPT",
+    "id": "indic-04",
+    "lane": "indic",
+    "reason": "quality_gate",
+    "tier": "verified"
+  },
+  {
+    "decision": "ACCEPT",
+    "id": "indic-05",
+    "lane": "indic",
+    "reason": "quality_gate",
+    "tier": "unverified"
+  },
+  {
+    "decision": "ACCEPT",
+    "id": "indic-06",
+    "lane": "indic",
+    "reason": "quality_gate",
+    "tier": "translated"
+  },
+  {
+    "decision": "ACCEPT",
+    "id": "indic-07",
+    "lane": "indic",
+    "reason": "quality_gate",
+    "tier": "synthetic"
+  },
+  {
+    "decision": "ACCEPT",
+    "id": "indic-08",
+    "lane": "indic",
+    "reason": "quality_gate",
+    "tier": "verified"
+  },
+  {
+    "decision": "ACCEPT",
+    "id": "indic-09",
+    "lane": "indic",
+    "reason": "quality_gate",
+    "tier": "unverified"
+  },
+  {
+    "decision": "ACCEPT",
+    "id": "indic-10",
+    "lane": "indic",
+    "reason": "quality_gate",
+    "tier": "translated"
+  },
+  {
+    "decision": "ACCEPT",
+    "id": "indic-11",
+    "lane": "indic",
+    "reason": "quality_gate",
+    "tier": "synthetic"
+  },
+  {
+    "decision": "ACCEPT",
+    "id": "indic-12",
+    "lane": "indic",
+    "reason": "quality_gate",
+    "tier": "verified"
+  },
+  {
+    "decision": "OVERRIDE_ACCEPT",
+    "id": "indic-13",
+    "lane": "indic",
+    "reason": "indic_protected_floor",
+    "tier": "unverified"
+  },
+  {
+    "decision": "ACCEPT",
+    "id": "indic-14",
+    "lane": "indic",
+    "reason": "quality_gate",
+    "tier": "translated"
+  },
+  {
+    "decision": "REJECT",
+    "id": "indic-15",
+    "lane": "indic",
+    "reason": "synthetic_quality",
+    "tier": "synthetic"
+  },
+  {
+    "decision": "ACCEPT",
+    "id": "reasoning-00",
+    "lane": "reasoning",
+    "reason": "quality_gate",
+    "tier": "native"
+  },
+  {
+    "decision": "ACCEPT",
+    "id": "reasoning-01",
+    "lane": "reasoning",
+    "reason": "quality_gate",
+    "tier": "native"
+  },
+  {
+    "decision": "ACCEPT",
+    "id": "reasoning-02",
+    "lane": "reasoning",
+    "reason": "quality_gate",
+    "tier": "native"
+  },
+  {
+    "decision": "ACCEPT",
+    "id": "reasoning-03",
+    "lane": "reasoning",
+    "reason": "quality_gate",
+    "tier": "native"
+  },
+  {
+    "decision": "ACCEPT",
+    "id": "reasoning-04",
+    "lane": "reasoning",
+    "reason": "quality_gate",
+    "tier": "native"
+  },
+  {
+    "decision": "ACCEPT",
+    "id": "reasoning-05",
+    "lane": "reasoning",
+    "reason": "quality_gate",
+    "tier": "native"
+  },
+  {
+    "decision": "ACCEPT",
+    "id": "reasoning-06",
+    "lane": "reasoning",
+    "reason": "quality_gate",
+    "tier": "native"
+  },
+  {
+    "decision": "ACCEPT",
+    "id": "reasoning-07",
+    "lane": "reasoning",
+    "reason": "quality_gate",
+    "tier": "native"
+  },
+  {
+    "decision": "ACCEPT",
+    "id": "reasoning-08",
+    "lane": "reasoning",
+    "reason": "quality_gate",
+    "tier": "native"
+  },
+  {
+    "decision": "ACCEPT",
+    "id": "reasoning-09",
+    "lane": "reasoning",
+    "reason": "quality_gate",
+    "tier": "native"
+  },
+  {
+    "decision": "ACCEPT",
+    "id": "reasoning-10",
+    "lane": "reasoning",
+    "reason": "quality_gate",
+    "tier": "native"
+  },
+  {
+    "decision": "ACCEPT",
+    "id": "reasoning-11",
+    "lane": "reasoning",
+    "reason": "quality_gate",
+    "tier": "native"
+  },
+  {
+    "decision": "ACCEPT",
+    "id": "reasoning-12",
+    "lane": "reasoning",
+    "reason": "quality_gate",
+    "tier": "native"
+  },
+  {
+    "decision": "ACCEPT",
+    "id": "reasoning-13",
+    "lane": "reasoning",
+    "reason": "quality_gate",
+    "tier": "native"
+  },
+  {
+    "decision": "ACCEPT",
+    "id": "reasoning-14",
+    "lane": "reasoning",
+    "reason": "quality_gate",
+    "tier": "native"
+  },
+  {
+    "decision": "ACCEPT",
+    "id": "reasoning-15",
+    "lane": "reasoning",
+    "reason": "quality_gate",
+    "tier": "native"
+  },
+  {
+    "decision": "ACCEPT",
+    "id": "agentic-00",
+    "lane": "agentic",
+    "reason": "quality_gate",
+    "tier": "native"
+  },
+  {
+    "decision": "ACCEPT",
+    "id": "agentic-01",
+    "lane": "agentic",
+    "reason": "quality_gate",
+    "tier": "native"
+  },
+  {
+    "decision": "ACCEPT",
+    "id": "agentic-02",
+    "lane": "agentic",
+    "reason": "quality_gate",
+    "tier": "native"
+  },
+  {
+    "decision": "ACCEPT",
+    "id": "agentic-03",
+    "lane": "agentic",
+    "reason": "quality_gate",
+    "tier": "native"
+  },
+  {
+    "decision": "ACCEPT",
+    "id": "agentic-04",
+    "lane": "agentic",
+    "reason": "quality_gate",
+    "tier": "native"
+  },
+  {
+    "decision": "ACCEPT",
+    "id": "agentic-05",
+    "lane": "agentic",
+    "reason": "quality_gate",
+    "tier": "native"
+  },
+  {
+    "decision": "ACCEPT",
+    "id": "agentic-06",
+    "lane": "agentic",
+    "reason": "quality_gate",
+    "tier": "native"
+  },
+  {
+    "decision": "ACCEPT",
+    "id": "agentic-07",
+    "lane": "agentic",
+    "reason": "quality_gate",
+    "tier": "native"
+  },
+  {
+    "decision": "ACCEPT",
+    "id": "agentic-08",
+    "lane": "agentic",
+    "reason": "quality_gate",
+    "tier": "native"
+  },
+  {
+    "decision": "ACCEPT",
+    "id": "agentic-09",
+    "lane": "agentic",
+    "reason": "quality_gate",
+    "tier": "native"
+  },
+  {
+    "decision": "ACCEPT",
+    "id": "agentic-10",
+    "lane": "agentic",
+    "reason": "quality_gate",
+    "tier": "native"
+  },
+  {
+    "decision": "ACCEPT",
+    "id": "agentic-11",
+    "lane": "agentic",
+    "reason": "quality_gate",
+    "tier": "native"
+  },
+  {
+    "decision": "ACCEPT",
+    "id": "agentic-12",
+    "lane": "agentic",
+    "reason": "quality_gate",
+    "tier": "native"
+  },
+  {
+    "decision": "ACCEPT",
+    "id": "agentic-13",
+    "lane": "agentic",
+    "reason": "quality_gate",
+    "tier": "native"
+  },
+  {
+    "decision": "ACCEPT",
+    "id": "agentic-14",
+    "lane": "agentic",
+    "reason": "quality_gate",
+    "tier": "native"
+  },
+  {
+    "decision": "ACCEPT",
+    "id": "agentic-15",
+    "lane": "agentic",
+    "reason": "quality_gate",
+    "tier": "native"
+  },
+  {
+    "decision": "ACCEPT",
+    "id": "long_context-00",
+    "lane": "long_context",
+    "reason": "quality_gate",
+    "tier": "native"
+  },
+  {
+    "decision": "ACCEPT",
+    "id": "long_context-01",
+    "lane": "long_context",
+    "reason": "quality_gate",
+    "tier": "native"
+  },
+  {
+    "decision": "ACCEPT",
+    "id": "long_context-02",
+    "lane": "long_context",
+    "reason": "quality_gate",
+    "tier": "native"
+  },
+  {
+    "decision": "ACCEPT",
+    "id": "long_context-03",
+    "lane": "long_context",
+    "reason": "quality_gate",
+    "tier": "native"
+  },
+  {
+    "decision": "ACCEPT",
+    "id": "long_context-04",
+    "lane": "long_context",
+    "reason": "quality_gate",
+    "tier": "native"
+  },
+  {
+    "decision": "ACCEPT",
+    "id": "long_context-05",
+    "lane": "long_context",
+    "reason": "quality_gate",
+    "tier": "native"
+  },
+  {
+    "decision": "ACCEPT",
+    "id": "long_context-06",
+    "lane": "long_context",
+    "reason": "quality_gate",
+    "tier": "native"
+  },
+  {
+    "decision": "ACCEPT",
+    "id": "long_context-07",
+    "lane": "long_context",
+    "reason": "quality_gate",
+    "tier": "native"
+  },
+  {
+    "decision": "ACCEPT",
+    "id": "long_context-08",
+    "lane": "long_context",
+    "reason": "quality_gate",
+    "tier": "native"
+  },
+  {
+    "decision": "ACCEPT",
+    "id": "long_context-09",
+    "lane": "long_context",
+    "reason": "quality_gate",
+    "tier": "native"
+  },
+  {
+    "decision": "ACCEPT",
+    "id": "long_context-10",
+    "lane": "long_context",
+    "reason": "quality_gate",
+    "tier": "native"
+  },
+  {
+    "decision": "ACCEPT",
+    "id": "long_context-11",
+    "lane": "long_context",
+    "reason": "quality_gate",
+    "tier": "native"
+  },
+  {
+    "decision": "ACCEPT",
+    "id": "long_context-12",
+    "lane": "long_context",
+    "reason": "quality_gate",
+    "tier": "native"
+  },
+  {
+    "decision": "ACCEPT",
+    "id": "long_context-13",
+    "lane": "long_context",
+    "reason": "quality_gate",
+    "tier": "native"
+  },
+  {
+    "decision": "ACCEPT",
+    "id": "long_context-14",
+    "lane": "long_context",
+    "reason": "quality_gate",
+    "tier": "native"
+  },
+  {
+    "decision": "ACCEPT",
+    "id": "long_context-15",
+    "lane": "long_context",
+    "reason": "quality_gate",
+    "tier": "native"
+  },
+  {
+    "decision": "ACCEPT",
+    "id": "general-00",
+    "lane": "general",
+    "reason": "quality_gate",
+    "tier": "native"
+  },
+  {
+    "decision": "DEFER",
+    "id": "general-01",
+    "lane": "general",
+    "reason": "needs_verification",
+    "tier": "native"
+  },
+  {
+    "decision": "ACCEPT",
+    "id": "general-02",
+    "lane": "general",
+    "reason": "quality_gate",
+    "tier": "native"
+  },
+  {
+    "decision": "ACCEPT",
+    "id": "general-03",
+    "lane": "general",
+    "reason": "quality_gate",
+    "tier": "native"
+  },
+  {
+    "decision": "ACCEPT",
+    "id": "general-04",
+    "lane": "general",
+    "reason": "quality_gate",
+    "tier": "native"
+  },
+  {
+    "decision": "ACCEPT",
+    "id": "general-05",
+    "lane": "general",
+    "reason": "quality_gate",
+    "tier": "native"
+  },
+  {
+    "decision": "DEFER",
+    "id": "general-06",
+    "lane": "general",
+    "reason": "needs_verification",
+    "tier": "native"
+  },
+  {
+    "decision": "ACCEPT",
+    "id": "general-07",
+    "lane": "general",
+    "reason": "quality_gate",
+    "tier": "native"
+  },
+  {
+    "decision": "ACCEPT",
+    "id": "general-08",
+    "lane": "general",
+    "reason": "quality_gate",
+    "tier": "native"
+  },
+  {
+    "decision": "ACCEPT",
+    "id": "general-09",
+    "lane": "general",
+    "reason": "quality_gate",
+    "tier": "native"
+  },
+  {
+    "decision": "ACCEPT",
+    "id": "general-10",
+    "lane": "general",
+    "reason": "quality_gate",
+    "tier": "native"
+  },
+  {
+    "decision": "DEFER",
+    "id": "general-11",
+    "lane": "general",
+    "reason": "needs_verification",
+    "tier": "native"
+  },
+  {
+    "decision": "ACCEPT",
+    "id": "general-12",
+    "lane": "general",
+    "reason": "quality_gate",
+    "tier": "native"
+  },
+  {
+    "decision": "ACCEPT",
+    "id": "general-13",
+    "lane": "general",
+    "reason": "quality_gate",
+    "tier": "native"
+  },
+  {
+    "decision": "ACCEPT",
+    "id": "general-14",
+    "lane": "general",
+    "reason": "quality_gate",
+    "tier": "native"
+  },
+  {
+    "decision": "ACCEPT",
+    "id": "general-15",
+    "lane": "general",
+    "reason": "quality_gate",
+    "tier": "native"
+  }
+]

@@ -1,0 +1,16 @@
+{
+  "cleaning_script_hash": "23d54d56a22aae74c37da00b44e90b8c1a3a6e8eea5ec33ebc083ae3865db55c",
+  "content_hash": "1d18c26f42ef791da0bfc453d46fffccccf910ee378dfb48295fc1ed414f996f",
+  "id": "validation-1",
+  "lane": "general",
+  "languages": [
+    "en"
+  ],
+  "license": "CC0-1.0",
+  "path": "shards/validation/validation-1.json",
+  "source": "fixture:heldout",
+  "split": "validation",
+  "tier": "native",
+  "token_count": 6,
+  "tokenizer_hash": "e87fb6e50b23b3d141c31992441f7c2cbf6034077573439de4710513cf49c746"
+}

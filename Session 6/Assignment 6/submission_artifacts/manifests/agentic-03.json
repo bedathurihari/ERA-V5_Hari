@@ -1,0 +1,16 @@
+{
+  "cleaning_script_hash": "23d54d56a22aae74c37da00b44e90b8c1a3a6e8eea5ec33ebc083ae3865db55c",
+  "content_hash": "e4d117d062cff9aceb6a3910c8f1758528db1f585d8d773003c9aff5c5ebc908",
+  "id": "agentic-03",
+  "lane": "agentic",
+  "languages": [
+    "en"
+  ],
+  "license": "CC0-1.0",
+  "path": "shards/train/agentic-03.json",
+  "source": "fixture:agentic",
+  "split": "train",
+  "tier": "native",
+  "token_count": 33,
+  "tokenizer_hash": "e87fb6e50b23b3d141c31992441f7c2cbf6034077573439de4710513cf49c746"
+}

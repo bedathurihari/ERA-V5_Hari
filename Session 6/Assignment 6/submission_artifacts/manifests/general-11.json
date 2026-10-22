@@ -1,0 +1,16 @@
+{
+  "cleaning_script_hash": "23d54d56a22aae74c37da00b44e90b8c1a3a6e8eea5ec33ebc083ae3865db55c",
+  "content_hash": "b542f0289175da71da659c39fbf88ba029de8b127b0a5e3e96cf3641c6c75f78",
+  "id": "general-11",
+  "lane": "general",
+  "languages": [
+    "en"
+  ],
+  "license": "CC0-1.0",
+  "path": "shards/train/general-11.json",
+  "source": "fixture:general",
+  "split": "train",
+  "tier": "native",
+  "token_count": 33,
+  "tokenizer_hash": "e87fb6e50b23b3d141c31992441f7c2cbf6034077573439de4710513cf49c746"
+}

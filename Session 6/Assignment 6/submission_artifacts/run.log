@@ -1,0 +1,19 @@
+shards created: 84 immutable content-addressed manifest records
+manifests validated
+[PASS] tokenizer_hash_verified
+evaluation data blocked: 4 eval/validation shards
+[PASS] eval_shard_blocked
+OPUS decisions recorded: accept/reject/defer/protected-floor override
+mixture compiled: deterministic weighted-deficit stage allocation with protected floors
+batches packed: 24; width=16
+checkpoint saved: offset=10
+[PASS] checkpoint_saved
+crash simulated: deliberate RuntimeError after atomic checkpoint and ledger writes
+run resumed from committed checkpoint and ledger offsets
+[PASS] resume_next_batch_matched
+historical stream replayed: ids, spans and hashes verified
+[PASS] replay_hash_matched
+branch forked from precrash checkpoint with alternative learning rate
+audit completed: all batches contiguous and unique, hashes and learning lineage valid
+performance measured: occupied=384 useful=360 wall_seconds=0.023800
+[PASS] evidence_generated

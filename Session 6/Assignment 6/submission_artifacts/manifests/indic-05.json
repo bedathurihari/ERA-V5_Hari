@@ -1,0 +1,17 @@
+{
+  "cleaning_script_hash": "23d54d56a22aae74c37da00b44e90b8c1a3a6e8eea5ec33ebc083ae3865db55c",
+  "content_hash": "90275489e9bb3fd1335be5814274a93872fc1b588cbc1a08da94a44fa851b522",
+  "id": "indic-05",
+  "lane": "indic",
+  "languages": [
+    "hi",
+    "te"
+  ],
+  "license": "CC0-1.0",
+  "path": "shards/train/indic-05.json",
+  "source": "fixture:indic",
+  "split": "train",
+  "tier": "unverified",
+  "token_count": 25,
+  "tokenizer_hash": "e87fb6e50b23b3d141c31992441f7c2cbf6034077573439de4710513cf49c746"
+}

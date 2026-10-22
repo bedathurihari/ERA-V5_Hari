@@ -1,0 +1,16 @@
+{
+  "cleaning_script_hash": "23d54d56a22aae74c37da00b44e90b8c1a3a6e8eea5ec33ebc083ae3865db55c",
+  "content_hash": "1f2dc2ffedb8b74dd700a56b138513921bc4bc49fc6ecce1e1d949823ebf83a6",
+  "id": "reasoning-04",
+  "lane": "reasoning",
+  "languages": [
+    "en"
+  ],
+  "license": "CC0-1.0",
+  "path": "shards/train/reasoning-04.json",
+  "source": "fixture:reasoning",
+  "split": "train",
+  "tier": "native",
+  "token_count": 21,
+  "tokenizer_hash": "e87fb6e50b23b3d141c31992441f7c2cbf6034077573439de4710513cf49c746"
+}

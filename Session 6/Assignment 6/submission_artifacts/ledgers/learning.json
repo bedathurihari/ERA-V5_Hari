@@ -1,0 +1,2402 @@
+[
+  {
+    "batch_hash": "42ee16a653522c6b41e5eced30bffd4671449bbfc482a14b504aaf5acb69caa6",
+    "batch_id": "batch-0000",
+    "mean_loss": 0.6931471805599453,
+    "offset": 0,
+    "shard_id": "indic-00",
+    "source_content_hash": "0d0b03c56c8cc75bce669cca85e028f76027d6903961419494e8b48553353bc2",
+    "token_losses": [
+      {
+        "loss": 0.6931471805599453,
+        "position": 1,
+        "source_token": 28,
+        "target_token": 42
+      },
+      {
+        "loss": 0.6931471805599453,
+        "position": 2,
+        "source_token": 42,
+        "target_token": 25
+      },
+      {
+        "loss": 0.6931471805599453,
+        "position": 3,
+        "source_token": 25,
+        "target_token": 3
+      },
+      {
+        "loss": 0.6931471805599453,
+        "position": 4,
+        "source_token": 3,
+        "target_token": 26
+      },
+      {
+        "loss": 0.6931471805599453,
+        "position": 5,
+        "source_token": 26,
+        "target_token": 23
+      },
+      {
+        "loss": 0.6931471805599453,
+        "position": 6,
+        "source_token": 23,
+        "target_token": 43
+      },
+      {
+        "loss": 0.6931471805599453,
+        "position": 7,
+        "source_token": 43,
+        "target_token": 22
+      },
+      {
+        "loss": 0.6931471805599453,
+        "position": 8,
+        "source_token": 22,
+        "target_token": 19
+      },
+      {
+        "loss": 0.6931471805599453,
+        "position": 9,
+        "source_token": 19,
+        "target_token": 32
+      },
+      {
+        "loss": 0.6931471805599453,
+        "position": 10,
+        "source_token": 32,
+        "target_token": 24
+      },
+      {
+        "loss": 0.6931471805599453,
+        "position": 11,
+        "source_token": 24,
+        "target_token": 34
+      },
+      {
+        "loss": 0.6931471805599453,
+        "position": 12,
+        "source_token": 34,
+        "target_token": 36
+      },
+      {
+        "loss": 0.6931471805599453,
+        "position": 13,
+        "source_token": 36,
+        "target_token": 22
+      },
+      {
+        "loss": 0.6931471805599453,
+        "position": 14,
+        "source_token": 22,
+        "target_token": 21
+      },
+      {
+        "loss": 0.6931471805599453,
+        "position": 15,
+        "source_token": 21,
+        "target_token": 35
+      }
+    ]
+  },
+  {
+    "batch_hash": "92777ce73e4d1b193366cf079ad3b3abf2b3b0c71cb74afd9a153e17d437d958",
+    "batch_id": "batch-0001",
+    "mean_loss": 0.6566402136536406,
+    "offset": 1,
+    "shard_id": "general-00",
+    "source_content_hash": "fa80132b0fd40e20abfdb356a9759f80000e1592a1225d05047c10d86c3f7333",
+    "token_losses": [
+      {
+        "loss": 0.6931471805599453,
+        "position": 1,
+        "source_token": 27,
+        "target_token": 30
+      },
+      {
+        "loss": 0.6931471805599453,
+        "position": 2,
+        "source_token": 30,
+        "target_token": 25
+      },
+      {
+        "loss": 0.6539469673175899,
+        "position": 3,
+        "source_token": 25,
+        "target_token": 3
+      },
+      {
+        "loss": 0.6539469673175899,
+        "position": 4,
+        "source_token": 3,
+        "target_token": 26
+      },
+      {
+        "loss": 0.6539469673175899,
+        "position": 5,
+        "source_token": 26,
+        "target_token": 23
+      },
+      {
+        "loss": 0.6539469673175899,
+        "position": 6,
+        "source_token": 23,
+        "target_token": 43
+      },
+      {
+        "loss": 0.6539469673175899,
+        "position": 7,
+        "source_token": 43,
+        "target_token": 22
+      },
+      {
+        "loss": 0.6349461015956136,
+        "position": 8,
+        "source_token": 22,
+        "target_token": 19
+      },
+      {
+        "loss": 0.6539469673175899,
+        "position": 9,
+        "source_token": 19,
+        "target_token": 32
+      },
+      {
+        "loss": 0.6539469673175899,
+        "position": 10,
+        "source_token": 32,
+        "target_token": 24
+      },
+      {
+        "loss": 0.6539469673175899,
+        "position": 11,
+        "source_token": 24,
+        "target_token": 34
+      },
+      {
+        "loss": 0.6539469673175899,
+        "position": 12,
+        "source_token": 34,
+        "target_token": 36
+      },
+      {
+        "loss": 0.6539469673175899,
+        "position": 13,
+        "source_token": 36,
+        "target_token": 22
+      },
+      {
+        "loss": 0.6349461015956136,
+        "position": 14,
+        "source_token": 22,
+        "target_token": 21
+      },
+      {
+        "loss": 0.6539469673175899,
+        "position": 15,
+        "source_token": 21,
+        "target_token": 35
+      }
+    ]
+  },
+  {
+    "batch_hash": "c1174ce8a1d207735e75ef5cfbd0af232095e0282a9d22167b053caeed9ccb0b",
+    "batch_id": "batch-0002",
+    "mean_loss": 0.6181099275614095,
+    "offset": 2,
+    "shard_id": "reasoning-00",
+    "source_content_hash": "4bf255a4c36906c0cb2cad77434c58e433982e43340dedab01e131d4c6d7a65f",
+    "token_losses": [
+      {
+        "loss": 0.6547148941810588,
+        "position": 1,
+        "source_token": 32,
+        "target_token": 30
+      },
+      {
+        "loss": 0.6539469673175899,
+        "position": 2,
+        "source_token": 30,
+        "target_token": 25
+      },
+      {
+        "loss": 0.6178165312954601,
+        "position": 3,
+        "source_token": 25,
+        "target_token": 3
+      },
+      {
+        "loss": 0.6178165312954601,
+        "position": 4,
+        "source_token": 3,
+        "target_token": 26
+      },
+      {
+        "loss": 0.6178165312954601,
+        "position": 5,
+        "source_token": 26,
+        "target_token": 23
+      },
+      {
+        "loss": 0.6178165312954601,
+        "position": 6,
+        "source_token": 23,
+        "target_token": 43
+      },
+      {
+        "loss": 0.6178165312954601,
+        "position": 7,
+        "source_token": 43,
+        "target_token": 22
+      },
+      {
+        "loss": 0.5835026038362151,
+        "position": 8,
+        "source_token": 22,
+        "target_token": 19
+      },
+      {
+        "loss": 0.6178165312954601,
+        "position": 9,
+        "source_token": 19,
+        "target_token": 32
+      },
+      {
+        "loss": 0.6178165312954601,
+        "position": 10,
+        "source_token": 32,
+        "target_token": 24
+      },
+      {
+        "loss": 0.6178165312954601,
+        "position": 11,
+        "source_token": 24,
+        "target_token": 34
+      },
+      {
+        "loss": 0.6178165312954601,
+        "position": 12,
+        "source_token": 34,
+        "target_token": 36
+      },
+      {
+        "loss": 0.6178165312954601,
+        "position": 13,
+        "source_token": 36,
+        "target_token": 22
+      },
+      {
+        "loss": 0.5835026038362151,
+        "position": 14,
+        "source_token": 22,
+        "target_token": 21
+      },
+      {
+        "loss": 0.6178165312954601,
+        "position": 15,
+        "source_token": 21,
+        "target_token": 35
+      }
+    ]
+  },
+  {
+    "batch_hash": "91d50491a8d4295fbc6421cf60b2b1c110617603ad87737df424afa72afde6d8",
+    "batch_id": "batch-0003",
+    "mean_loss": 0.6149848209803709,
+    "offset": 3,
+    "shard_id": "agentic-00",
+    "source_content_hash": "ff6328352e022d8af7eb6e38ff283b59948acb9581b3407172c6f3f676d5b005",
+    "token_losses": [
+      {
+        "loss": 0.6931471805599453,
+        "position": 1,
+        "source_token": 20,
+        "target_token": 30
+      },
+      {
+        "loss": 0.6178165312954601,
+        "position": 2,
+        "source_token": 30,
+        "target_token": 25
+      },
+      {
+        "loss": 0.5845050191523377,
+        "position": 3,
+        "source_token": 25,
+        "target_token": 3
+      },
+      {
+        "loss": 0.5845050191523377,
+        "position": 4,
+        "source_token": 3,
+        "target_token": 26
+      },
+      {
+        "loss": 0.5845050191523377,
+        "position": 5,
+        "source_token": 26,
+        "target_token": 23
+      },
+      {
+        "loss": 0.5845050191523377,
+        "position": 6,
+        "source_token": 23,
+        "target_token": 43
+      },
+      {
+        "loss": 0.5845050191523377,
+        "position": 7,
+        "source_token": 43,
+        "target_token": 22
+      },
+      {
+        "loss": 0.5379844585363907,
+        "position": 8,
+        "source_token": 22,
+        "target_token": 19
+      },
+      {
+        "loss": 0.5845050191523377,
+        "position": 9,
+        "source_token": 19,
+        "target_token": 32
+      },
+      {
+        "loss": 0.5676758889142771,
+        "position": 10,
+        "source_token": 32,
+        "target_token": 24
+      },
+      {
+        "loss": 0.5845050191523377,
+        "position": 11,
+        "source_token": 24,
+        "target_token": 34
+      },
+      {
+        "loss": 0.6371715796532911,
+        "position": 12,
+        "source_token": 34,
+        "target_token": 37
+      },
+      {
+        "loss": 0.6931471805599453,
+        "position": 13,
+        "source_token": 37,
+        "target_token": 31
+      },
+      {
+        "loss": 0.6931471805599453,
+        "position": 14,
+        "source_token": 31,
+        "target_token": 39
+      },
+      {
+        "loss": 0.6931471805599453,
+        "position": 15,
+        "source_token": 39,
+        "target_token": 33
+      }
+    ]
+  },
+  {
+    "batch_hash": "aa9172f09e4349fe76b00df036abaafb7b8c56873351896950988470b6798d68",
+    "batch_id": "batch-0004",
+    "mean_loss": 0.5839668896092463,
+    "offset": 4,
+    "shard_id": "indic-01",
+    "source_content_hash": "0522e8638918e089236415b9161387b9e7ff4f12cb7c7b24505971f55c9868f3",
+    "token_losses": [
+      {
+        "loss": 0.6733471672280339,
+        "position": 1,
+        "source_token": 28,
+        "target_token": 41
+      },
+      {
+        "loss": 0.6931471805599453,
+        "position": 2,
+        "source_token": 41,
+        "target_token": 25
+      },
+      {
+        "loss": 0.6206422369367226,
+        "position": 3,
+        "source_token": 25,
+        "target_token": 4
+      },
+      {
+        "loss": 0.6931471805599453,
+        "position": 4,
+        "source_token": 4,
+        "target_token": 26
+      },
+      {
+        "loss": 0.5537761226605379,
+        "position": 5,
+        "source_token": 26,
+        "target_token": 23
+      },
+      {
+        "loss": 0.5537761226605379,
+        "position": 6,
+        "source_token": 23,
+        "target_token": 43
+      },
+      {
+        "loss": 0.5537761226605379,
+        "position": 7,
+        "source_token": 43,
+        "target_token": 22
+      },
+      {
+        "loss": 0.5108216580657879,
+        "position": 8,
+        "source_token": 22,
+        "target_token": 19
+      },
+      {
+        "loss": 0.5537761226605379,
+        "position": 9,
+        "source_token": 19,
+        "target_token": 32
+      },
+      {
+        "loss": 0.5382433998403818,
+        "position": 10,
+        "source_token": 32,
+        "target_token": 24
+      },
+      {
+        "loss": 0.5537761226605379,
+        "position": 11,
+        "source_token": 24,
+        "target_token": 34
+      },
+      {
+        "loss": 0.5679946132301253,
+        "position": 12,
+        "source_token": 34,
+        "target_token": 36
+      },
+      {
+        "loss": 0.5845050191523377,
+        "position": 13,
+        "source_token": 36,
+        "target_token": 22
+      },
+      {
+        "loss": 0.5242692561103871,
+        "position": 14,
+        "source_token": 22,
+        "target_token": 21
+      },
+      {
+        "loss": 0.5845050191523377,
+        "position": 15,
+        "source_token": 21,
+        "target_token": 35
+      }
+    ]
+  },
+  {
+    "batch_hash": "d2e56ee9b8b592a2e0d32b694f8aa65d3f7a62725f0eae69f74a9a3881a9d1ed",
+    "batch_id": "batch-0005",
+    "mean_loss": 0.5408553216032305,
+    "offset": 5,
+    "shard_id": "long_context-00",
+    "source_content_hash": "07aad978bec936b7ca08a90f596089e9b31de51d99113f33f8e65ef8cd65b9a0",
+    "token_losses": [
+      {
+        "loss": 0.6931471805599453,
+        "position": 1,
+        "source_token": 29,
+        "target_token": 30
+      },
+      {
+        "loss": 0.5845050191523377,
+        "position": 2,
+        "source_token": 30,
+        "target_token": 25
+      },
+      {
+        "loss": 0.5382130869029116,
+        "position": 3,
+        "source_token": 25,
+        "target_token": 3
+      },
+      {
+        "loss": 0.5537761226605379,
+        "position": 4,
+        "source_token": 3,
+        "target_token": 26
+      },
+      {
+        "loss": 0.5254092044882969,
+        "position": 5,
+        "source_token": 26,
+        "target_token": 23
+      },
+      {
+        "loss": 0.5254092044882969,
+        "position": 6,
+        "source_token": 23,
+        "target_token": 43
+      },
+      {
+        "loss": 0.5254092044882969,
+        "position": 7,
+        "source_token": 43,
+        "target_token": 22
+      },
+      {
+        "loss": 0.47327877822866254,
+        "position": 8,
+        "source_token": 22,
+        "target_token": 19
+      },
+      {
+        "loss": 0.5254092044882969,
+        "position": 9,
+        "source_token": 19,
+        "target_token": 32
+      },
+      {
+        "loss": 0.5110609152062097,
+        "position": 10,
+        "source_token": 32,
+        "target_token": 24
+      },
+      {
+        "loss": 0.5254092044882969,
+        "position": 11,
+        "source_token": 24,
+        "target_token": 34
+      },
+      {
+        "loss": 0.5385376327767317,
+        "position": 12,
+        "source_token": 34,
+        "target_token": 36
+      },
+      {
+        "loss": 0.5537761226605379,
+        "position": 13,
+        "source_token": 36,
+        "target_token": 22
+      },
+      {
+        "loss": 0.48571282079856126,
+        "position": 14,
+        "source_token": 22,
+        "target_token": 21
+      },
+      {
+        "loss": 0.5537761226605379,
+        "position": 15,
+        "source_token": 21,
+        "target_token": 35
+      }
+    ]
+  },
+  {
+    "batch_hash": "e52be48fda86d3ba9850d47affc5d688625d110ccb9deb0d548a9b935ec8c73f",
+    "batch_id": "batch-0006",
+    "mean_loss": 0.5283342151076706,
+    "offset": 6,
+    "shard_id": "general-02",
+    "source_content_hash": "69824ec8ca86479f304b8a27d962ee91aaa932e178a5179f9a40c9b806a5c2c9",
+    "token_losses": [
+      {
+        "loss": 0.6539469673175899,
+        "position": 1,
+        "source_token": 27,
+        "target_token": 30
+      },
+      {
+        "loss": 0.5537761226605379,
+        "position": 2,
+        "source_token": 30,
+        "target_token": 25
+      },
+      {
+        "loss": 0.5887534809360216,
+        "position": 3,
+        "source_token": 25,
+        "target_token": 11
+      },
+      {
+        "loss": 0.6931471805599453,
+        "position": 4,
+        "source_token": 11,
+        "target_token": 26
+      },
+      {
+        "loss": 0.4991997540823959,
+        "position": 5,
+        "source_token": 26,
+        "target_token": 23
+      },
+      {
+        "loss": 0.4991997540823959,
+        "position": 6,
+        "source_token": 23,
+        "target_token": 43
+      },
+      {
+        "loss": 0.4991997540823959,
+        "position": 7,
+        "source_token": 43,
+        "target_token": 22
+      },
+      {
+        "loss": 0.4398949795361553,
+        "position": 8,
+        "source_token": 22,
+        "target_token": 19
+      },
+      {
+        "loss": 0.4991997540823959,
+        "position": 9,
+        "source_token": 19,
+        "target_token": 32
+      },
+      {
+        "loss": 0.48593259875826406,
+        "position": 10,
+        "source_token": 32,
+        "target_token": 24
+      },
+      {
+        "loss": 0.4991997540823959,
+        "position": 11,
+        "source_token": 24,
+        "target_token": 34
+      },
+      {
+        "loss": 0.5113327786535267,
+        "position": 12,
+        "source_token": 34,
+        "target_token": 36
+      },
+      {
+        "loss": 0.5254092044882969,
+        "position": 13,
+        "source_token": 36,
+        "target_token": 22
+      },
+      {
+        "loss": 0.4514119388044442,
+        "position": 14,
+        "source_token": 22,
+        "target_token": 21
+      },
+      {
+        "loss": 0.5254092044882969,
+        "position": 15,
+        "source_token": 21,
+        "target_token": 35
+      }
+    ]
+  },
+  {
+    "batch_hash": "b276bb30aa98ce2f2ffe5571a10488415a36a4ce8e2a42a6a28e13776254270d",
+    "batch_id": "batch-0007",
+    "mean_loss": 0.49560904248196974,
+    "offset": 7,
+    "shard_id": "reasoning-01",
+    "source_content_hash": "7963a60d523579a9745027ea69dd071767943f4be937396117b2522cb332e681",
+    "token_losses": [
+      {
+        "loss": 0.5446785792087021,
+        "position": 1,
+        "source_token": 32,
+        "target_token": 30
+      },
+      {
+        "loss": 0.5254092044882969,
+        "position": 2,
+        "source_token": 30,
+        "target_token": 25
+      },
+      {
+        "loss": 0.5571008595277517,
+        "position": 3,
+        "source_token": 25,
+        "target_token": 4
+      },
+      {
+        "loss": 0.6539469673175899,
+        "position": 4,
+        "source_token": 4,
+        "target_token": 26
+      },
+      {
+        "loss": 0.47495933016462283,
+        "position": 5,
+        "source_token": 26,
+        "target_token": 23
+      },
+      {
+        "loss": 0.47495933016462283,
+        "position": 6,
+        "source_token": 23,
+        "target_token": 43
+      },
+      {
+        "loss": 0.47495933016462283,
+        "position": 7,
+        "source_token": 43,
+        "target_token": 22
+      },
+      {
+        "loss": 0.4101267350562056,
+        "position": 8,
+        "source_token": 22,
+        "target_token": 19
+      },
+      {
+        "loss": 0.47495933016462283,
+        "position": 9,
+        "source_token": 19,
+        "target_token": 32
+      },
+      {
+        "loss": 0.4626784893384324,
+        "position": 10,
+        "source_token": 32,
+        "target_token": 24
+      },
+      {
+        "loss": 0.47495933016462283,
+        "position": 11,
+        "source_token": 24,
+        "target_token": 34
+      },
+      {
+        "loss": 0.48618404738070686,
+        "position": 12,
+        "source_token": 34,
+        "target_token": 36
+      },
+      {
+        "loss": 0.4991997540823959,
+        "position": 13,
+        "source_token": 36,
+        "target_token": 22
+      },
+      {
+        "loss": 0.42081459592395437,
+        "position": 14,
+        "source_token": 22,
+        "target_token": 21
+      },
+      {
+        "loss": 0.4991997540823959,
+        "position": 15,
+        "source_token": 21,
+        "target_token": 35
+      }
+    ]
+  },
+  {
+    "batch_hash": "12ceee498414930080ff38f450212af442ac315523b54da0ecb49036167521fa",
+    "batch_id": "batch-0008",
+    "mean_loss": 0.49508574319025533,
+    "offset": 8,
+    "shard_id": "indic-02",
+    "source_content_hash": "a73917531b9cc212bab489044fc014c485327ad8d6c4e02e472e3c81430e74ba",
+    "token_losses": [
+      {
+        "loss": 0.6543310045042104,
+        "position": 1,
+        "source_token": 28,
+        "target_token": 40
+      },
+      {
+        "loss": 0.6931471805599453,
+        "position": 2,
+        "source_token": 40,
+        "target_token": 25
+      },
+      {
+        "loss": 0.5432319486433874,
+        "position": 3,
+        "source_token": 25,
+        "target_token": 11
+      },
+      {
+        "loss": 0.6539469673175899,
+        "position": 4,
+        "source_token": 11,
+        "target_token": 26
+      },
+      {
+        "loss": 0.4525151273597527,
+        "position": 5,
+        "source_token": 26,
+        "target_token": 23
+      },
+      {
+        "loss": 0.4525151273597527,
+        "position": 6,
+        "source_token": 23,
+        "target_token": 43
+      },
+      {
+        "loss": 0.4525151273597527,
+        "position": 7,
+        "source_token": 43,
+        "target_token": 22
+      },
+      {
+        "loss": 0.3835030831627287,
+        "position": 8,
+        "source_token": 22,
+        "target_token": 19
+      },
+      {
+        "loss": 0.4525151273597527,
+        "position": 9,
+        "source_token": 19,
+        "target_token": 32
+      },
+      {
+        "loss": 0.4292789087862223,
+        "position": 10,
+        "source_token": 32,
+        "target_token": 24
+      },
+      {
+        "loss": 0.4525151273597527,
+        "position": 11,
+        "source_token": 24,
+        "target_token": 34
+      },
+      {
+        "loss": 0.4629113152372272,
+        "position": 12,
+        "source_token": 34,
+        "target_token": 36
+      },
+      {
+        "loss": 0.47495933016462283,
+        "position": 13,
+        "source_token": 36,
+        "target_token": 22
+      },
+      {
+        "loss": 0.39344144251450913,
+        "position": 14,
+        "source_token": 22,
+        "target_token": 21
+      },
+      {
+        "loss": 0.47495933016462283,
+        "position": 15,
+        "source_token": 21,
+        "target_token": 35
+      }
+    ]
+  },
+  {
+    "batch_hash": "b9874698f48ee763336e282d6f7e02b98faec3932d1205d42c163236d20787ca",
+    "batch_id": "batch-0009",
+    "mean_loss": 0.5139254085445096,
+    "offset": 9,
+    "shard_id": "agentic-01",
+    "source_content_hash": "66a0415b2221c0c916a5b8af509ae8baa5e87e02022d887f293913cb6cb7e542",
+    "token_losses": [
+      {
+        "loss": 0.6539469673175899,
+        "position": 1,
+        "source_token": 20,
+        "target_token": 30
+      },
+      {
+        "loss": 0.4991997540823959,
+        "position": 2,
+        "source_token": 30,
+        "target_token": 25
+      },
+      {
+        "loss": 0.5148510028349788,
+        "position": 3,
+        "source_token": 25,
+        "target_token": 4
+      },
+      {
+        "loss": 0.6178165312954601,
+        "position": 4,
+        "source_token": 4,
+        "target_token": 26
+      },
+      {
+        "loss": 0.43170928229104394,
+        "position": 5,
+        "source_token": 26,
+        "target_token": 23
+      },
+      {
+        "loss": 0.43170928229104394,
+        "position": 6,
+        "source_token": 23,
+        "target_token": 43
+      },
+      {
+        "loss": 0.43170928229104394,
+        "position": 7,
+        "source_token": 43,
+        "target_token": 22
+      },
+      {
+        "loss": 0.3596178104314089,
+        "position": 8,
+        "source_token": 22,
+        "target_token": 19
+      },
+      {
+        "loss": 0.43170928229104394,
+        "position": 9,
+        "source_token": 19,
+        "target_token": 32
+      },
+      {
+        "loss": 0.41014057498928014,
+        "position": 10,
+        "source_token": 32,
+        "target_token": 24
+      },
+      {
+        "loss": 0.43170928229104394,
+        "position": 11,
+        "source_token": 24,
+        "target_token": 34
+      },
+      {
+        "loss": 0.5329211738085425,
+        "position": 12,
+        "source_token": 34,
+        "target_token": 37
+      },
+      {
+        "loss": 0.6539469673175899,
+        "position": 13,
+        "source_token": 37,
+        "target_token": 31
+      },
+      {
+        "loss": 0.6539469673175899,
+        "position": 14,
+        "source_token": 31,
+        "target_token": 39
+      },
+      {
+        "loss": 0.6539469673175899,
+        "position": 15,
+        "source_token": 39,
+        "target_token": 33
+      }
+    ]
+  },
+  {
+    "batch_hash": "d19b685717937c3741b5a50f10d36c46677856b64d3e67c19634ee9d9233a2a4",
+    "batch_id": "batch-0010",
+    "mean_loss": 0.45416281544677506,
+    "offset": 10,
+    "shard_id": "general-03",
+    "source_content_hash": "33e2a832ff95da3bc099b3e3acacadfe6868283dd2eec6756eca7af24be36595",
+    "token_losses": [
+      {
+        "loss": 0.6178165312954601,
+        "position": 1,
+        "source_token": 27,
+        "target_token": 30
+      },
+      {
+        "loss": 0.47495933016462283,
+        "position": 2,
+        "source_token": 30,
+        "target_token": 25
+      },
+      {
+        "loss": 0.530715925569212,
+        "position": 3,
+        "source_token": 25,
+        "target_token": 12
+      },
+      {
+        "loss": 0.6931471805599453,
+        "position": 4,
+        "source_token": 12,
+        "target_token": 26
+      },
+      {
+        "loss": 0.41239801218229777,
+        "position": 5,
+        "source_token": 26,
+        "target_token": 23
+      },
+      {
+        "loss": 0.41239801218229777,
+        "position": 6,
+        "source_token": 23,
+        "target_token": 43
+      },
+      {
+        "loss": 0.41239801218229777,
+        "position": 7,
+        "source_token": 43,
+        "target_token": 22
+      },
+      {
+        "loss": 0.345264285736561,
+        "position": 8,
+        "source_token": 22,
+        "target_token": 19
+      },
+      {
+        "loss": 0.41239801218229777,
+        "position": 9,
+        "source_token": 19,
+        "target_token": 32
+      },
+      {
+        "loss": 0.39235108537265484,
+        "position": 10,
+        "source_token": 32,
+        "target_token": 24
+      },
+      {
+        "loss": 0.41239801218229777,
+        "position": 11,
+        "source_token": 24,
+        "target_token": 34
+      },
+      {
+        "loss": 0.42968175626801575,
+        "position": 12,
+        "source_token": 34,
+        "target_token": 36
+      },
+      {
+        "loss": 0.4525151273597527,
+        "position": 13,
+        "source_token": 36,
+        "target_token": 22
+      },
+      {
+        "loss": 0.36148582110415906,
+        "position": 14,
+        "source_token": 22,
+        "target_token": 21
+      },
+      {
+        "loss": 0.4525151273597527,
+        "position": 15,
+        "source_token": 21,
+        "target_token": 35
+      }
+    ]
+  },
+  {
+    "batch_hash": "4792f49c99a14909e96a953d0ddb0f50916ca0e6f22c93c826eae49f0322e487",
+    "batch_id": "batch-0011",
+    "mean_loss": 0.4512711065495736,
+    "offset": 11,
+    "shard_id": "indic-04",
+    "source_content_hash": "9d1212595674ef1480e5095bfa433098c5b31646397ea584cd1d6ef52a140942",
+    "token_losses": [
+      {
+        "loss": 0.6174408925588228,
+        "position": 1,
+        "source_token": 28,
+        "target_token": 42
+      },
+      {
+        "loss": 0.6539469673175899,
+        "position": 2,
+        "source_token": 42,
+        "target_token": 25
+      },
+      {
+        "loss": 0.5172797078400028,
+        "position": 3,
+        "source_token": 25,
+        "target_token": 13
+      },
+      {
+        "loss": 0.6931471805599453,
+        "position": 4,
+        "source_token": 13,
+        "target_token": 26
+      },
+      {
+        "loss": 0.3944506584460858,
+        "position": 5,
+        "source_token": 26,
+        "target_token": 23
+      },
+      {
+        "loss": 0.3944506584460858,
+        "position": 6,
+        "source_token": 23,
+        "target_token": 43
+      },
+      {
+        "loss": 0.3944506584460858,
+        "position": 7,
+        "source_token": 43,
+        "target_token": 22
+      },
+      {
+        "loss": 0.32505509827396645,
+        "position": 8,
+        "source_token": 22,
+        "target_token": 19
+      },
+      {
+        "loss": 0.3944506584460858,
+        "position": 9,
+        "source_token": 19,
+        "target_token": 32
+      },
+      {
+        "loss": 0.37579331796278875,
+        "position": 10,
+        "source_token": 32,
+        "target_token": 24
+      },
+      {
+        "loss": 0.3944506584460858,
+        "position": 11,
+        "source_token": 24,
+        "target_token": 34
+      },
+      {
+        "loss": 0.4105147821532993,
+        "position": 12,
+        "source_token": 34,
+        "target_token": 36
+      },
+      {
+        "loss": 0.43170928229104394,
+        "position": 13,
+        "source_token": 36,
+        "target_token": 22
+      },
+      {
+        "loss": 0.3402167947646727,
+        "position": 14,
+        "source_token": 22,
+        "target_token": 21
+      },
+      {
+        "loss": 0.43170928229104394,
+        "position": 15,
+        "source_token": 21,
+        "target_token": 35
+      }
+    ]
+  },
+  {
+    "batch_hash": "fa92c2d69c45fa22410826d261ce1cc09aa1bec129d0a93c87c5d54f78c695e2",
+    "batch_id": "batch-0012",
+    "mean_loss": 0.4364539021975099,
+    "offset": 12,
+    "shard_id": "indic-05",
+    "source_content_hash": "90275489e9bb3fd1335be5814274a93872fc1b588cbc1a08da94a44fa851b522",
+    "token_losses": [
+      {
+        "loss": 0.6009928334830965,
+        "position": 1,
+        "source_token": 28,
+        "target_token": 41
+      },
+      {
+        "loss": 0.6539469673175899,
+        "position": 2,
+        "source_token": 41,
+        "target_token": 25
+      },
+      {
+        "loss": 0.5043568702397596,
+        "position": 3,
+        "source_token": 25,
+        "target_token": 14
+      },
+      {
+        "loss": 0.6931471805599453,
+        "position": 4,
+        "source_token": 14,
+        "target_token": 26
+      },
+      {
+        "loss": 0.3777486898541854,
+        "position": 5,
+        "source_token": 26,
+        "target_token": 23
+      },
+      {
+        "loss": 0.3777486898541854,
+        "position": 6,
+        "source_token": 23,
+        "target_token": 43
+      },
+      {
+        "loss": 0.3777486898541854,
+        "position": 7,
+        "source_token": 43,
+        "target_token": 22
+      },
+      {
+        "loss": 0.30678237273592873,
+        "position": 8,
+        "source_token": 22,
+        "target_token": 19
+      },
+      {
+        "loss": 0.3777486898541854,
+        "position": 9,
+        "source_token": 19,
+        "target_token": 32
+      },
+      {
+        "loss": 0.36036116044489147,
+        "position": 10,
+        "source_token": 32,
+        "target_token": 24
+      },
+      {
+        "loss": 0.3777486898541854,
+        "position": 11,
+        "source_token": 24,
+        "target_token": 34
+      },
+      {
+        "loss": 0.39269914757755103,
+        "position": 12,
+        "source_token": 34,
+        "target_token": 36
+      },
+      {
+        "loss": 0.41239801218229777,
+        "position": 13,
+        "source_token": 36,
+        "target_token": 22
+      },
+      {
+        "loss": 0.32098252696836366,
+        "position": 14,
+        "source_token": 22,
+        "target_token": 21
+      },
+      {
+        "loss": 0.41239801218229777,
+        "position": 15,
+        "source_token": 21,
+        "target_token": 35
+      }
+    ]
+  },
+  {
+    "batch_hash": "9e01a1322d088b4ef3992563a52fd0867ae93fe5a16f984a6c63a4ccc65c472c",
+    "batch_id": "batch-0013",
+    "mean_loss": 0.39381185778970057,
+    "offset": 13,
+    "shard_id": "reasoning-02",
+    "source_content_hash": "a866ce08081095cf9343cfa1532aa2a7512c53b2c4c9c23a36bf6ace64594da2",
+    "token_losses": [
+      {
+        "loss": 0.45557176272823563,
+        "position": 1,
+        "source_token": 32,
+        "target_token": 30
+      },
+      {
+        "loss": 0.4525151273597527,
+        "position": 2,
+        "source_token": 30,
+        "target_token": 25
+      },
+      {
+        "loss": 0.46562914832654845,
+        "position": 3,
+        "source_token": 25,
+        "target_token": 11
+      },
+      {
+        "loss": 0.6178165312954601,
+        "position": 4,
+        "source_token": 11,
+        "target_token": 26
+      },
+      {
+        "loss": 0.36218470499140976,
+        "position": 5,
+        "source_token": 26,
+        "target_token": 23
+      },
+      {
+        "loss": 0.36218470499140976,
+        "position": 6,
+        "source_token": 23,
+        "target_token": 43
+      },
+      {
+        "loss": 0.36218470499140976,
+        "position": 7,
+        "source_token": 43,
+        "target_token": 22
+      },
+      {
+        "loss": 0.2902090453166971,
+        "position": 8,
+        "source_token": 22,
+        "target_token": 19
+      },
+      {
+        "loss": 0.36218470499140976,
+        "position": 9,
+        "source_token": 19,
+        "target_token": 32
+      },
+      {
+        "loss": 0.3459585443271759,
+        "position": 10,
+        "source_token": 32,
+        "target_token": 24
+      },
+      {
+        "loss": 0.36218470499140976,
+        "position": 11,
+        "source_token": 24,
+        "target_token": 34
+      },
+      {
+        "loss": 0.37611749711824977,
+        "position": 12,
+        "source_token": 34,
+        "target_token": 36
+      },
+      {
+        "loss": 0.3944506584460858,
+        "position": 13,
+        "source_token": 36,
+        "target_token": 22
+      },
+      {
+        "loss": 0.3035353685241676,
+        "position": 14,
+        "source_token": 22,
+        "target_token": 21
+      },
+      {
+        "loss": 0.3944506584460858,
+        "position": 15,
+        "source_token": 21,
+        "target_token": 35
+      }
+    ]
+  },
+  {
+    "batch_hash": "6f82197142b4a54bc08899e4d3a5f6520ad8acfe716a376c45dcb344f2051afa",
+    "batch_id": "batch-0014",
+    "mean_loss": 0.44896613754563913,
+    "offset": 14,
+    "shard_id": "agentic-02",
+    "source_content_hash": "2a9def556fbe0e438132667b4f21a09ad3c5420a04af40320509be9b11cb6572",
+    "token_losses": [
+      {
+        "loss": 0.6178165312954601,
+        "position": 1,
+        "source_token": 20,
+        "target_token": 30
+      },
+      {
+        "loss": 0.43170928229104394,
+        "position": 2,
+        "source_token": 30,
+        "target_token": 25
+      },
+      {
+        "loss": 0.44386910478088487,
+        "position": 3,
+        "source_token": 25,
+        "target_token": 11
+      },
+      {
+        "loss": 0.5845050191523377,
+        "position": 4,
+        "source_token": 11,
+        "target_token": 26
+      },
+      {
+        "loss": 0.347661461712498,
+        "position": 5,
+        "source_token": 26,
+        "target_token": 23
+      },
+      {
+        "loss": 0.347661461712498,
+        "position": 6,
+        "source_token": 23,
+        "target_token": 43
+      },
+      {
+        "loss": 0.347661461712498,
+        "position": 7,
+        "source_token": 43,
+        "target_token": 22
+      },
+      {
+        "loss": 0.27513132133257684,
+        "position": 8,
+        "source_token": 22,
+        "target_token": 19
+      },
+      {
+        "loss": 0.347661461712498,
+        "position": 9,
+        "source_token": 19,
+        "target_token": 32
+      },
+      {
+        "loss": 0.32430456063917834,
+        "position": 10,
+        "source_token": 32,
+        "target_token": 24
+      },
+      {
+        "loss": 0.347661461712498,
+        "position": 11,
+        "source_token": 24,
+        "target_token": 34
+      },
+      {
+        "loss": 0.4653993412442338,
+        "position": 12,
+        "source_token": 34,
+        "target_token": 37
+      },
+      {
+        "loss": 0.6178165312954601,
+        "position": 13,
+        "source_token": 37,
+        "target_token": 31
+      },
+      {
+        "loss": 0.6178165312954601,
+        "position": 14,
+        "source_token": 31,
+        "target_token": 39
+      },
+      {
+        "loss": 0.6178165312954601,
+        "position": 15,
+        "source_token": 39,
+        "target_token": 33
+      }
+    ]
+  },
+  {
+    "batch_hash": "5e67ed9be56aba0744d0401ff395361b09298abe3ed3f8dce02c6ba10fafca51",
+    "batch_id": "batch-0015",
+    "mean_loss": 0.3814525929793569,
+    "offset": 15,
+    "shard_id": "long_context-01",
+    "source_content_hash": "2ab880a1c19a3a8670d25dcaa137ab158abe8d354af4fa9bb7d91d18b2f4fd5a",
+    "token_losses": [
+      {
+        "loss": 0.6539469673175899,
+        "position": 1,
+        "source_token": 29,
+        "target_token": 30
+      },
+      {
+        "loss": 0.41239801218229777,
+        "position": 2,
+        "source_token": 30,
+        "target_token": 25
+      },
+      {
+        "loss": 0.4321223586879855,
+        "position": 3,
+        "source_token": 25,
+        "target_token": 4
+      },
+      {
+        "loss": 0.5845050191523377,
+        "position": 4,
+        "source_token": 4,
+        "target_token": 26
+      },
+      {
+        "loss": 0.33409095196567484,
+        "position": 5,
+        "source_token": 26,
+        "target_token": 23
+      },
+      {
+        "loss": 0.33409095196567484,
+        "position": 6,
+        "source_token": 23,
+        "target_token": 43
+      },
+      {
+        "loss": 0.33409095196567484,
+        "position": 7,
+        "source_token": 43,
+        "target_token": 22
+      },
+      {
+        "loss": 0.26600912841954566,
+        "position": 8,
+        "source_token": 22,
+        "target_token": 19
+      },
+      {
+        "loss": 0.33409095196567484,
+        "position": 9,
+        "source_token": 19,
+        "target_token": 32
+      },
+      {
+        "loss": 0.312225914594123,
+        "position": 10,
+        "source_token": 32,
+        "target_token": 24
+      },
+      {
+        "loss": 0.33409095196567484,
+        "position": 11,
+        "source_token": 24,
+        "target_token": 34
+      },
+      {
+        "loss": 0.3517429529179606,
+        "position": 12,
+        "source_token": 34,
+        "target_token": 36
+      },
+      {
+        "loss": 0.3777486898541854,
+        "position": 13,
+        "source_token": 36,
+        "target_token": 22
+      },
+      {
+        "loss": 0.2828864018817686,
+        "position": 14,
+        "source_token": 22,
+        "target_token": 21
+      },
+      {
+        "loss": 0.3777486898541854,
+        "position": 15,
+        "source_token": 21,
+        "target_token": 35
+      }
+    ]
+  },
+  {
+    "batch_hash": "3fc8ab0a41d7942060094243132e7da35e62c2e902e561f6df2eacd19cc59b9b",
+    "batch_id": "batch-0016",
+    "mean_loss": 0.37148675933529796,
+    "offset": 16,
+    "shard_id": "general-04",
+    "source_content_hash": "fc8c0e11e79db30309ee012f0a1f097517067853d5dedc2a2dc2bc7afbb40f64",
+    "token_losses": [
+      {
+        "loss": 0.5845050191523377,
+        "position": 1,
+        "source_token": 27,
+        "target_token": 30
+      },
+      {
+        "loss": 0.3944506584460858,
+        "position": 2,
+        "source_token": 30,
+        "target_token": 25
+      },
+      {
+        "loss": 0.4474129642792459,
+        "position": 3,
+        "source_token": 25,
+        "target_token": 13
+      },
+      {
+        "loss": 0.6539469673175899,
+        "position": 4,
+        "source_token": 13,
+        "target_token": 26
+      },
+      {
+        "loss": 0.321393533235413,
+        "position": 5,
+        "source_token": 26,
+        "target_token": 23
+      },
+      {
+        "loss": 0.321393533235413,
+        "position": 6,
+        "source_token": 23,
+        "target_token": 43
+      },
+      {
+        "loss": 0.321393533235413,
+        "position": 7,
+        "source_token": 43,
+        "target_token": 22
+      },
+      {
+        "loss": 0.2529651948499342,
+        "position": 8,
+        "source_token": 22,
+        "target_token": 19
+      },
+      {
+        "loss": 0.321393533235413,
+        "position": 9,
+        "source_token": 19,
+        "target_token": 32
+      },
+      {
+        "loss": 0.30089778182419474,
+        "position": 10,
+        "source_token": 32,
+        "target_token": 24
+      },
+      {
+        "loss": 0.321393533235413,
+        "position": 11,
+        "source_token": 24,
+        "target_token": 34
+      },
+      {
+        "loss": 0.33790656171283295,
+        "position": 12,
+        "source_token": 34,
+        "target_token": 36
+      },
+      {
+        "loss": 0.36218470499140976,
+        "position": 13,
+        "source_token": 36,
+        "target_token": 22
+      },
+      {
+        "loss": 0.2688791662873653,
+        "position": 14,
+        "source_token": 22,
+        "target_token": 21
+      },
+      {
+        "loss": 0.36218470499140976,
+        "position": 15,
+        "source_token": 21,
+        "target_token": 35
+      }
+    ]
+  },
+  {
+    "batch_hash": "98af4ed6d07c947b5cc3f808d668d1f6879163b97125f91ca35d449bad59bb6c",
+    "batch_id": "batch-0017",
+    "mean_loss": 0.3824014838895801,
+    "offset": 17,
+    "shard_id": "indic-06",
+    "source_content_hash": "85a397f108e026a0bce57a45bd5cd0850c4412f6409f1a4111ac2b2eb6e8b843",
+    "token_losses": [
+      {
+        "loss": 0.5851762633999905,
+        "position": 1,
+        "source_token": 28,
+        "target_token": 40
+      },
+      {
+        "loss": 0.6539469673175899,
+        "position": 2,
+        "source_token": 40,
+        "target_token": 25
+      },
+      {
+        "loss": 0.44865925062681195,
+        "position": 3,
+        "source_token": 25,
+        "target_token": 15
+      },
+      {
+        "loss": 0.6931471805599453,
+        "position": 4,
+        "source_token": 15,
+        "target_token": 26
+      },
+      {
+        "loss": 0.30949712259290585,
+        "position": 5,
+        "source_token": 26,
+        "target_token": 23
+      },
+      {
+        "loss": 0.30949712259290585,
+        "position": 6,
+        "source_token": 23,
+        "target_token": 43
+      },
+      {
+        "loss": 0.30949712259290585,
+        "position": 7,
+        "source_token": 43,
+        "target_token": 22
+      },
+      {
+        "loss": 0.24101319725988588,
+        "position": 8,
+        "source_token": 22,
+        "target_token": 19
+      },
+      {
+        "loss": 0.30949712259290585,
+        "position": 9,
+        "source_token": 19,
+        "target_token": 32
+      },
+      {
+        "loss": 0.29025965290985745,
+        "position": 10,
+        "source_token": 32,
+        "target_token": 24
+      },
+      {
+        "loss": 0.30949712259290585,
+        "position": 11,
+        "source_token": 24,
+        "target_token": 34
+      },
+      {
+        "loss": 0.3249653902614525,
+        "position": 12,
+        "source_token": 34,
+        "target_token": 36
+      },
+      {
+        "loss": 0.347661461712498,
+        "position": 13,
+        "source_token": 36,
+        "target_token": 22
+      },
+      {
+        "loss": 0.2560458196186435,
+        "position": 14,
+        "source_token": 22,
+        "target_token": 21
+      },
+      {
+        "loss": 0.347661461712498,
+        "position": 15,
+        "source_token": 21,
+        "target_token": 35
+      }
+    ]
+  },
+  {
+    "batch_hash": "acb8b66d8e67d70bbf92dd5c8d9fef8a808d808147c5c42d1c5cbc940c3dc930",
+    "batch_id": "batch-0018",
+    "mean_loss": 0.338899767398556,
+    "offset": 18,
+    "shard_id": "reasoning-03",
+    "source_content_hash": "ad73f499508bc9c8783fbcd1f2aa933c5762592a42aea11c299f2344cc11b74e",
+    "token_losses": [
+      {
+        "loss": 0.3978132074314221,
+        "position": 1,
+        "source_token": 32,
+        "target_token": 30
+      },
+      {
+        "loss": 0.3777486898541854,
+        "position": 2,
+        "source_token": 30,
+        "target_token": 25
+      },
+      {
+        "loss": 0.42673261439148286,
+        "position": 3,
+        "source_token": 25,
+        "target_token": 12
+      },
+      {
+        "loss": 0.6539469673175899,
+        "position": 4,
+        "source_token": 12,
+        "target_token": 26
+      },
+      {
+        "loss": 0.2983364555530823,
+        "position": 5,
+        "source_token": 26,
+        "target_token": 23
+      },
+      {
+        "loss": 0.2983364555530823,
+        "position": 6,
+        "source_token": 23,
+        "target_token": 43
+      },
+      {
+        "loss": 0.2983364555530823,
+        "position": 7,
+        "source_token": 43,
+        "target_token": 22
+      },
+      {
+        "loss": 0.23003214583890672,
+        "position": 8,
+        "source_token": 22,
+        "target_token": 19
+      },
+      {
+        "loss": 0.2983364555530823,
+        "position": 9,
+        "source_token": 19,
+        "target_token": 32
+      },
+      {
+        "loss": 0.2802566845614875,
+        "position": 10,
+        "source_token": 32,
+        "target_token": 24
+      },
+      {
+        "loss": 0.2983364555530823,
+        "position": 11,
+        "source_token": 24,
+        "target_token": 34
+      },
+      {
+        "loss": 0.31284525722799544,
+        "position": 12,
+        "source_token": 34,
+        "target_token": 36
+      },
+      {
+        "loss": 0.33409095196567484,
+        "position": 13,
+        "source_token": 36,
+        "target_token": 22
+      },
+      {
+        "loss": 0.2442567626585085,
+        "position": 14,
+        "source_token": 22,
+        "target_token": 21
+      },
+      {
+        "loss": 0.33409095196567484,
+        "position": 15,
+        "source_token": 21,
+        "target_token": 35
+      }
+    ]
+  },
+  {
+    "batch_hash": "d5292f24054d9072ee133a0ff18967ab80538a3fac25c7db1e6cc4b23f096449",
+    "batch_id": "batch-0019",
+    "mean_loss": 0.40412399518184794,
+    "offset": 19,
+    "shard_id": "agentic-03",
+    "source_content_hash": "e4d117d062cff9aceb6a3910c8f1758528db1f585d8d773003c9aff5c5ebc908",
+    "token_losses": [
+      {
+        "loss": 0.5845050191523377,
+        "position": 1,
+        "source_token": 20,
+        "target_token": 30
+      },
+      {
+        "loss": 0.36218470499140976,
+        "position": 2,
+        "source_token": 30,
+        "target_token": 25
+      },
+      {
+        "loss": 0.40777507856983997,
+        "position": 3,
+        "source_token": 25,
+        "target_token": 12
+      },
+      {
+        "loss": 0.6178165312954601,
+        "position": 4,
+        "source_token": 12,
+        "target_token": 26
+      },
+      {
+        "loss": 0.2878524092948107,
+        "position": 5,
+        "source_token": 26,
+        "target_token": 23
+      },
+      {
+        "loss": 0.2878524092948107,
+        "position": 6,
+        "source_token": 23,
+        "target_token": 43
+      },
+      {
+        "loss": 0.2878524092948107,
+        "position": 7,
+        "source_token": 43,
+        "target_token": 22
+      },
+      {
+        "loss": 0.2199170238749852,
+        "position": 8,
+        "source_token": 22,
+        "target_token": 19
+      },
+      {
+        "loss": 0.2878524092948107,
+        "position": 9,
+        "source_token": 19,
+        "target_token": 32
+      },
+      {
+        "loss": 0.2646714684267792,
+        "position": 10,
+        "source_token": 32,
+        "target_token": 24
+      },
+      {
+        "loss": 0.2878524092948107,
+        "position": 11,
+        "source_token": 24,
+        "target_token": 34
+      },
+      {
+        "loss": 0.41221299748584195,
+        "position": 12,
+        "source_token": 34,
+        "target_token": 37
+      },
+      {
+        "loss": 0.5845050191523377,
+        "position": 13,
+        "source_token": 37,
+        "target_token": 31
+      },
+      {
+        "loss": 0.5845050191523377,
+        "position": 14,
+        "source_token": 31,
+        "target_token": 39
+      },
+      {
+        "loss": 0.5845050191523377,
+        "position": 15,
+        "source_token": 39,
+        "target_token": 33
+      }
+    ]
+  },
+  {
+    "batch_hash": "39e61c717246df74fdc9c0502b4804c21e6c7cc79e4fbf0c72f6eb5fb5c2f1f1",
+    "batch_id": "batch-0020",
+    "mean_loss": 0.32826205872313474,
+    "offset": 20,
+    "shard_id": "long_context-02",
+    "source_content_hash": "d3fcd59c4aaaca7ef85f03dfe25ee2a6113f1b52bc78f7d7eb0270847cd277ff",
+    "token_losses": [
+      {
+        "loss": 0.6178165312954601,
+        "position": 1,
+        "source_token": 29,
+        "target_token": 30
+      },
+      {
+        "loss": 0.347661461712498,
+        "position": 2,
+        "source_token": 30,
+        "target_token": 25
+      },
+      {
+        "loss": 0.3773834840111062,
+        "position": 3,
+        "source_token": 25,
+        "target_token": 11
+      },
+      {
+        "loss": 0.5537761226605379,
+        "position": 4,
+        "source_token": 11,
+        "target_token": 26
+      },
+      {
+        "loss": 0.277991388032248,
+        "position": 5,
+        "source_token": 26,
+        "target_token": 23
+      },
+      {
+        "loss": 0.277991388032248,
+        "position": 6,
+        "source_token": 23,
+        "target_token": 43
+      },
+      {
+        "loss": 0.277991388032248,
+        "position": 7,
+        "source_token": 43,
+        "target_token": 22
+      },
+      {
+        "loss": 0.21375995470398426,
+        "position": 8,
+        "source_token": 22,
+        "target_token": 19
+      },
+      {
+        "loss": 0.277991388032248,
+        "position": 9,
+        "source_token": 19,
+        "target_token": 32
+      },
+      {
+        "loss": 0.25614205497420356,
+        "position": 10,
+        "source_token": 32,
+        "target_token": 24
+      },
+      {
+        "loss": 0.277991388032248,
+        "position": 11,
+        "source_token": 24,
+        "target_token": 34
+      },
+      {
+        "loss": 0.2945149466901294,
+        "position": 12,
+        "source_token": 34,
+        "target_token": 36
+      },
+      {
+        "loss": 0.321393533235413,
+        "position": 13,
+        "source_token": 36,
+        "target_token": 22
+      },
+      {
+        "loss": 0.23013231816703603,
+        "position": 14,
+        "source_token": 22,
+        "target_token": 21
+      },
+      {
+        "loss": 0.321393533235413,
+        "position": 15,
+        "source_token": 21,
+        "target_token": 35
+      }
+    ]
+  },
+  {
+    "batch_hash": "21a961ed522aa775407140a6d6461c7621395a82cca4b3c4a13efd921e78334a",
+    "batch_id": "batch-0021",
+    "mean_loss": 0.35357452863065714,
+    "offset": 21,
+    "shard_id": "indic-07",
+    "source_content_hash": "eec441b9eae125312e540cad0482cff49f04dd608ae32e89a620d62a561eedae",
+    "token_losses": [
+      {
+        "loss": 0.5864963399748402,
+        "position": 1,
+        "source_token": 28,
+        "target_token": 38
+      },
+      {
+        "loss": 0.6931471805599453,
+        "position": 2,
+        "source_token": 38,
+        "target_token": 25
+      },
+      {
+        "loss": 0.4107294971594674,
+        "position": 3,
+        "source_token": 25,
+        "target_token": 16
+      },
+      {
+        "loss": 0.6931471805599453,
+        "position": 4,
+        "source_token": 16,
+        "target_token": 26
+      },
+      {
+        "loss": 0.2687047672077416,
+        "position": 5,
+        "source_token": 26,
+        "target_token": 23
+      },
+      {
+        "loss": 0.2687047672077416,
+        "position": 6,
+        "source_token": 23,
+        "target_token": 43
+      },
+      {
+        "loss": 0.2687047672077416,
+        "position": 7,
+        "source_token": 43,
+        "target_token": 22
+      },
+      {
+        "loss": 0.2048401789535504,
+        "position": 8,
+        "source_token": 22,
+        "target_token": 19
+      },
+      {
+        "loss": 0.2687047672077416,
+        "position": 9,
+        "source_token": 19,
+        "target_token": 32
+      },
+      {
+        "loss": 0.2480857705454613,
+        "position": 10,
+        "source_token": 32,
+        "target_token": 24
+      },
+      {
+        "loss": 0.2687047672077416,
+        "position": 11,
+        "source_token": 24,
+        "target_token": 34
+      },
+      {
+        "loss": 0.2842594372101393,
+        "position": 12,
+        "source_token": 34,
+        "target_token": 36
+      },
+      {
+        "loss": 0.30949712259290585,
+        "position": 13,
+        "source_token": 36,
+        "target_token": 22
+      },
+      {
+        "loss": 0.22039426327198716,
+        "position": 14,
+        "source_token": 22,
+        "target_token": 21
+      },
+      {
+        "loss": 0.30949712259290585,
+        "position": 15,
+        "source_token": 21,
+        "target_token": 35
+      }
+    ]
+  },
+  {
+    "batch_hash": "c378b06ade899899113af250374c4eed20303e70a082eff4126a5d6e3653450c",
+    "batch_id": "batch-0022",
+    "mean_loss": 0.30075603588837424,
+    "offset": 22,
+    "shard_id": "reasoning-04",
+    "source_content_hash": "1f2dc2ffedb8b74dd700a56b138513921bc4bc49fc6ecce1e1d949823ebf83a6",
+    "token_losses": [
+      {
+        "loss": 0.358085121008176,
+        "position": 1,
+        "source_token": 32,
+        "target_token": 30
+      },
+      {
+        "loss": 0.33409095196567484,
+        "position": 2,
+        "source_token": 30,
+        "target_token": 25
+      },
+      {
+        "loss": 0.38190867596905875,
+        "position": 3,
+        "source_token": 25,
+        "target_token": 13
+      },
+      {
+        "loss": 0.6178165312954601,
+        "position": 4,
+        "source_token": 13,
+        "target_token": 26
+      },
+      {
+        "loss": 0.25994839253449675,
+        "position": 5,
+        "source_token": 26,
+        "target_token": 23
+      },
+      {
+        "loss": 0.25994839253449675,
+        "position": 6,
+        "source_token": 23,
+        "target_token": 43
+      },
+      {
+        "loss": 0.25994839253449675,
+        "position": 7,
+        "source_token": 43,
+        "target_token": 22
+      },
+      {
+        "loss": 0.19657452884186968,
+        "position": 8,
+        "source_token": 22,
+        "target_token": 19
+      },
+      {
+        "loss": 0.25994839253449675,
+        "position": 9,
+        "source_token": 19,
+        "target_token": 32
+      },
+      {
+        "loss": 0.24046761414337411,
+        "position": 10,
+        "source_token": 32,
+        "target_token": 24
+      },
+      {
+        "loss": 0.25994839253449675,
+        "position": 11,
+        "source_token": 24,
+        "target_token": 34
+      },
+      {
+        "loss": 0.2746090319607819,
+        "position": 12,
+        "source_token": 34,
+        "target_token": 36
+      },
+      {
+        "loss": 0.2983364555530823,
+        "position": 13,
+        "source_token": 36,
+        "target_token": 22
+      },
+      {
+        "loss": 0.21137320936257,
+        "position": 14,
+        "source_token": 22,
+        "target_token": 21
+      },
+      {
+        "loss": 0.2983364555530823,
+        "position": 15,
+        "source_token": 21,
+        "target_token": 35
+      }
+    ]
+  },
+  {
+    "batch_hash": "2334f962fbe3539486a2fe48e8cba45f5845393d7710ffc343e14980662248e4",
+    "batch_id": "batch-0023",
+    "mean_loss": 0.30880966340863947,
+    "offset": 23,
+    "shard_id": "general-05",
+    "source_content_hash": "37184bc9a423c5c57b81f3b49ffa30de4666e30d8efb10c5b51e514b44f6fe47",
+    "token_losses": [
+      {
+        "loss": 0.5537761226605379,
+        "position": 1,
+        "source_token": 27,
+        "target_token": 30
+      },
+      {
+        "loss": 0.321393533235413,
+        "position": 2,
+        "source_token": 30,
+        "target_token": 25
+      },
+      {
+        "loss": 0.3832064443502901,
+        "position": 3,
+        "source_token": 25,
+        "target_token": 14
+      },
+      {
+        "loss": 0.6539469673175899,
+        "position": 4,
+        "source_token": 14,
+        "target_token": 26
+      },
+      {
+        "loss": 0.25168212961430175,
+        "position": 5,
+        "source_token": 26,
+        "target_token": 23
+      },
+      {
+        "loss": 0.25168212961430175,
+        "position": 6,
+        "source_token": 23,
+        "target_token": 43
+      },
+      {
+        "loss": 0.25168212961430175,
+        "position": 7,
+        "source_token": 43,
+        "target_token": 22
+      },
+      {
+        "loss": 0.1888980183341346,
+        "position": 8,
+        "source_token": 22,
+        "target_token": 19
+      },
+      {
+        "loss": 0.25168212961430175,
+        "position": 9,
+        "source_token": 19,
+        "target_token": 32
+      },
+      {
+        "loss": 0.22829363513623743,
+        "position": 10,
+        "source_token": 32,
+        "target_token": 24
+      },
+      {
+        "loss": 0.25168212961430175,
+        "position": 11,
+        "source_token": 24,
+        "target_token": 34
+      },
+      {
+        "loss": 0.265516758740277,
+        "position": 12,
+        "source_token": 34,
+        "target_token": 36
+      },
+      {
+        "loss": 0.2878524092948107,
+        "position": 13,
+        "source_token": 36,
+        "target_token": 22
+      },
+      {
+        "loss": 0.20299800469398238,
+        "position": 14,
+        "source_token": 22,
+        "target_token": 21
+      },
+      {
+        "loss": 0.2878524092948107,
+        "position": 15,
+        "source_token": 21,
+        "target_token": 35
+      }
+    ]
+  }
+]

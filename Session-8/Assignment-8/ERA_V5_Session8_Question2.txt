@@ -1,0 +1,22 @@
+ERA V5 — Session 8 Assignment
+Question 2: What does the timeline actually show?
+
+Once I arranged the mechanisms by their original publication dates, I noticed that attention research did not progress in a simple sequence where each new mechanism replaced the previous one. Instead, researchers kept returning to several different costs: the computation required to compare tokens, memory bandwidth during decoding, the size of the KV cache, and the difficulty of retrieving useful information from long contexts.
+
+The 2017 Transformer made scaled dot-product attention practical as a parallel alternative to recurrence, but its dense pairwise comparisons had a quadratic cost. By 2019 and 2020, researchers were already exploring different responses: structured sparse attention reduced the number of token pairs, multi-query attention (MQA) reduced the KV bandwidth needed during autoregressive decoding, and linear attention replaced the attention matrix with a compact recurrent representation. These approaches addressed different bottlenecks rather than the same problem.
+
+A surprising chronological detail was that MQA appeared in November 2019, well before grouped-query attention (GQA) in May 2023. GQA was not the first attempt to reduce KV-cache cost; it was a later compromise between the efficiency of MQA and the head diversity of conventional multi-head attention.
+
+Another important turning point was FlashAttention in May 2022. It retained exact softmax attention but reorganized computation to avoid expensive GPU memory transfers. That showed that an algorithm can remain mathematically the same while becoming much faster through a better implementation. Meanwhile, RoPE, ALiBi, NTK-aware scaling and YaRN addressed how models represent positions and extend usable context; they did not directly solve the entire memory or retrieval problem.
+
+By 2024–2025, the focus increasingly shifted toward long-context serving and memory design. Multi-head latent attention (MLA) compressed the KV representation, DeltaNet and Gated DeltaNet explored more selective updates to recurrent memory, and DeepSeek Sparse Attention reduced selected token interactions. These methods make different trade-offs: compression can lose information, sparse selection can miss relevant tokens, and compact recurrent states do not guarantee exact recall of every earlier token.
+
+My main conclusion is that there is no single best attention mechanism. For a short-context assistant, exact attention with efficient kernels may be the sensible choice. For long-context or streaming systems, cache compression, sparse attention, or recurrent memory may matter more, but they need to be evaluated for retrieval accuracy—not just speed or advertised context length. I expect future models to combine several mechanisms rather than rely on one universal replacement.
+
+Additional mechanisms beyond the minimum list that I included in the exploration:
+- Transformer-XL — first arXiv version, January 9, 2019: https://arxiv.org/abs/1901.02860
+- FlashAttention — first arXiv version, May 27, 2022: https://arxiv.org/abs/2205.14135
+- Memory-efficient Top-k Attention — June 2021: https://arxiv.org/abs/2106.06899
+- LazyAttention — June 2026: https://arxiv.org/abs/2606.04302
+
+The biggest insight from seeing the dates in order is that attention research repeatedly changes which resource it is trying to save: arithmetic, memory movement, cached state, or effective context. Progress on one axis does not automatically solve the others.

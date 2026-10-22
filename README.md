@@ -2,6 +2,7 @@
 
 Course repository for ERA V5 assignments and project work.
 
-## Assignments
+## Sessions
 
-- [Assignment 5 — Mixture and Curriculum Plan](./Assignment-5/README.md)
+### Session 5
+- [Assignment 5 — V5 Mixture and Curriculum Plan](./Session-5/Assignment-5/README.md)

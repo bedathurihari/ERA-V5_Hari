@@ -15,14 +15,14 @@ Important edge cases:
 - NTK-aware scaling: **June 2023** community release, not a refereed original paper. Day-level dates for informal techniques are less robust than arXiv timestamps; verify the linked thread before citing a precise timestamp.
 - DeepSeek Sparse Attention: official V3.2-Exp announcement **29 September 2025**. Do not conflate with MLA in DeepSeek-V2 (**7 May 2024**) or KV compression.
 - DroPE: original preprint **13 December 2025**, despite **12 January 2026** Sakana AI announcement.
-- LazyAttention: 2026 ICML proceeding; the displayed July 2026 date is a **conference-period placeholder**, not verified first arXiv availability, and should not be interpreted as day-accurate. Further verify original preprint before claiming first appearance.
+- LazyAttention: first arXiv submission **3 June 2026**; subsequently appeared at ICML 2026.
 
 ## Primary source index
 - 2017-06-12 — **Scaled dot-product attention** — https://arxiv.org/abs/1706.03762
 - 2017-06-12 — **Sinusoidal positions** — https://arxiv.org/abs/1706.03762
 - 2017-06-12 — **Learned absolute positions** — https://arxiv.org/abs/1706.03762
 - 2019-04-23 — **Sparse Transformer** — https://openai.com/index/sparse-transformer/
-- 2019-06-26 — **Transformer-XL recurrence** — https://arxiv.org/abs/1901.02860
+- 2019-01-09 — **Transformer-XL recurrence** — https://arxiv.org/abs/1901.02860
 - 2019-11-06 — **Multi-query attention (MQA)** — https://arxiv.org/abs/1911.02150
 - 2020-04-10 — **Longformer sliding window** — https://arxiv.org/abs/2004.05150
 - 2020-06-29 — **Linear attention** — https://arxiv.org/abs/2006.16236
@@ -39,7 +39,7 @@ Important edge cases:
 - 2024-12-09 — **Gated DeltaNet** — https://arxiv.org/abs/2412.06464
 - 2025-09-29 — **DeepSeek Sparse Attention (DSA)** — https://api-docs.deepseek.com/news/news250929/
 - 2025-12-13 — **DroPE** — https://arxiv.org/abs/2512.12167
-- 2026-07-01 — **LazyAttention** — https://proceedings.mlr.press/v306/xia26f.html
+- 2026-06-03 — **LazyAttention** — https://arxiv.org/abs/2606.04302
 
 ## What the date order reveals
 The field alternates between reducing pairwise compute, reducing decode KV traffic, preserving memory, and extending usable length. These are not interchangeable optimizations. FlashAttention improves the exact softmax kernel's IO without changing quadratic arithmetic; MQA/GQA/MLA optimize KV capacity; window/sparse strategies avoid some score pairs; recurrent delta memory changes representation and retrieval guarantees; RoPE/ALiBi/YaRN/DroPE modify positional generalization. Selection depends on length, model quality goals, deployment hardware, and retrieval workload.

@@ -1,6 +1,6 @@
 # Attention Atlas — ERA V5 Session 8 Assignment
 
-Interactive, source-linked chronological explorer covering 22 attention and positional mechanisms from 2017 to 2026.
+Interactive, source-linked chronological explorer covering 25 attention and positional mechanisms from 2017 to 2026.
 
 ## Running it
 Open `index.html` in any browser. No dependencies, no build step. For Netlify/Vercel, publish this folder as a static site with no build command. GitHub Pages can publish the folder or use a workflow.
@@ -16,6 +16,10 @@ Important edge cases:
 - DeepSeek Sparse Attention: official V3.2-Exp announcement **29 September 2025**. Do not conflate with MLA in DeepSeek-V2 (**7 May 2024**) or KV compression.
 - DroPE: original preprint **13 December 2025**, despite **12 January 2026** Sakana AI announcement.
 - LazyAttention: first arXiv submission **3 June 2026**; subsequently appeared at ICML 2026.
+
+- 2019-12-25 — **Explicit sparse / top-k selection** — https://arxiv.org/abs/1912.11637
+- 2021-02-22 — **Delta rule / fast weight programming** — https://arxiv.org/abs/2102.11174
+- 2021-06-13 — **Memory-efficient top-k attention** — https://arxiv.org/abs/2106.06899
 
 ## Primary source index
 - 2017-06-12 — **Scaled dot-product attention** — https://arxiv.org/abs/1706.03762

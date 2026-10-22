@@ -1,0 +1,18 @@
+ERA V5 Session 9 Assignment 9 — successful CPU notebook execution
+Torch 2.10.0+cpu. seed=9. vocabulary 12. dim 32.
+tokens (4,13); hidden (4,13,32); logits (4,13,12)
+shift strings: 'a' -> ' '; ' ' -> 'c'; 'c' -> 'a'; 'a' -> 't'; 't' -> ' '; ' ' -> 's'; 's' -> 'a'; 'a' -> 't'; 't' -> '.'
+PAD: 48 -> 36 contributing terms. CE 2.463489 -> 2.438704.
+PACK: '.' -> 'a' invalid transition, 19 -> 18 terms. CE 2.460906 -> 2.455686.
+INIT: CE 2.438704 PPL 11.458 vocabulary 12 ratio 0.955.
+PARAMS: untied 2208, tied 1824, saved 384.
+MEMORY (separate Linux CPU child processes, forward only): ordinary CE 31.381449 RSS 321.01 MiB; chunked CE 31.381447 RSS 290.82 MiB; ordinary/chunked 1.104x.
+HEADS: initial L1 2.494630, L2 2.487981, sum 4.982611.
+step 0 L1=2.49463 L2=2.48798 sum=4.98261
+step 25 L1=0.23683 L2=0.26736 sum=0.50418
+step 50 L1=0.23228 L2=0.26128 sum=0.49356
+step 75 L1=0.23188 L2=0.26084 sum=0.49273
+step 100 L1=0.23173 L2=0.26070 sum=0.49244
+step 125 L1=0.23164 L2=0.26060 sum=0.49224
+step 150 L1=0.231568 L2=0.260515 sum=0.492083
+The completed full local notebook was executed top-to-bottom; measured CPU RSS will vary per runner.

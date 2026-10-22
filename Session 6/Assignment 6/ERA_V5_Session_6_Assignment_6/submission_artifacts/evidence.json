@@ -1,0 +1,69 @@
+{
+  "performance": {
+    "allocated_token_slots": 216,
+    "batches_per_second": 8.91229372089566,
+    "elapsed_seconds": 0.6732273629999952,
+    "loss_bearing_tokens": 198,
+    "loss_token_utilization": 0.9166666666666666,
+    "packing_utilization": 1.0,
+    "useful_loss_tokens_per_second": 294.10569278955677
+  },
+  "requirements": {
+    "checkpoint_integrity": {
+      "evidence": "checkpoints/final.json",
+      "passed": true
+    },
+    "crash_recovery": {
+      "evidence": "checkpoints/before_crash.json; ledgers/consumption.json",
+      "passed": true
+    },
+    "evaluation_firewall": {
+      "evidence": "ledgers/firewall.json",
+      "passed": true
+    },
+    "fork": {
+      "evidence": "checkpoints/fork.json",
+      "passed": true
+    },
+    "learning_trace": {
+      "evidence": "ledgers/learning.json",
+      "passed": true
+    },
+    "mixture_compliance": {
+      "evidence": "ledgers/mixture_audit.json",
+      "passed": true
+    },
+    "opus_audit": {
+      "evidence": "ledgers/opus.json",
+      "passed": true
+    },
+    "packing_correctness": {
+      "evidence": "manifests/packed_batches.json",
+      "passed": true
+    },
+    "replay": {
+      "evidence": "ledgers/replay.json",
+      "passed": true
+    },
+    "throughput": {
+      "evidence": "performance.json",
+      "passed": true
+    },
+    "tokenizer_integrity": {
+      "evidence": "manifests/tokenizer.json; manifests/*.manifest.json",
+      "passed": true
+    }
+  },
+  "summary": {
+    "actual_resume_batch_id": "batch-0003",
+    "actual_resume_hash": "83a86856cb83d06b1f839ea9c885039466210e2e99a94fb727c21608a6f2b3bc",
+    "expected_resume_batch_id": "batch-0003",
+    "expected_resume_hash": "83a86856cb83d06b1f839ea9c885039466210e2e99a94fb727c21608a6f2b3bc",
+    "passed": 11,
+    "replay_interval": [
+      1,
+      4
+    ],
+    "total": 11
+  }
+}

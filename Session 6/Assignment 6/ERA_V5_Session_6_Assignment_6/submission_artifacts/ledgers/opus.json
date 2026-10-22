@@ -1,0 +1,42 @@
+[
+  {
+    "confidence": 0.9,
+    "decision": "accept",
+    "floor": 0.15,
+    "id": "high_quality",
+    "lane": "reasoning",
+    "new_weight": 0.3,
+    "quality": 0.9,
+    "reason": "quality_and_floor_pass"
+  },
+  {
+    "confidence": 0.9,
+    "decision": "reject",
+    "floor": 0.2,
+    "id": "low_quality",
+    "lane": "general",
+    "new_weight": 0.4,
+    "quality": 0.2,
+    "reason": "quality_gate"
+  },
+  {
+    "confidence": 0.3,
+    "decision": "defer",
+    "floor": 0.1,
+    "id": "uncertain",
+    "lane": "agentic",
+    "new_weight": 0.25,
+    "quality": 0.9,
+    "reason": "insufficient_confidence"
+  },
+  {
+    "confidence": 0.9,
+    "decision": "protected_floor_override",
+    "floor": 0.1,
+    "id": "floor_attack",
+    "lane": "indic",
+    "new_weight": 0.01,
+    "quality": 0.9,
+    "reason": "floor_prevents_reweight"
+  }
+]

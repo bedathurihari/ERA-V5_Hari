@@ -1,0 +1,16 @@
+{
+  "cleaning_script_hash": "74d175c518b609eb8a01e99514992b0a582300cb8f500e7704b0b33623b0b9b4",
+  "content_hash": "6d23a2f20de459e3a97a1ce0d35576eb57d9f6ef811e223f4cca09cbca2b6a51",
+  "doc_count": 2,
+  "id": "train_long_context",
+  "lane": "long_context",
+  "languages": [
+    "en"
+  ],
+  "license": "CC0-1.0 (original examples)",
+  "shard_path": "manifests/shards/train_long_context.json",
+  "source": "embedded illustrative corpus",
+  "split": "train",
+  "token_count": 657,
+  "tokenizer_hash": "4bcdb1e08ee1c9a3e97bf38137a3e612b111e607d52255ab6dc2806ea0e010ad"
+}

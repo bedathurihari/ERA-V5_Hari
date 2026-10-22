@@ -1,0 +1,224 @@
+[
+  {
+    "batch_hash": "064bf543bc19a6f0d41307159ac85aa4453483a70ccacb64999ded0216114a81",
+    "batch_id": "batch-0000",
+    "offset": 0,
+    "samples": [
+      {
+        "doc_id": "train-general-0",
+        "lane": "general",
+        "loss_tokens": 11,
+        "sample_id": "0-0",
+        "token_span": [
+          0,
+          12
+        ]
+      },
+      {
+        "doc_id": "train-reasoning-0",
+        "lane": "reasoning",
+        "loss_tokens": 11,
+        "sample_id": "0-1",
+        "token_span": [
+          0,
+          12
+        ]
+      },
+      {
+        "doc_id": "train-agentic-0",
+        "lane": "agentic",
+        "loss_tokens": 11,
+        "sample_id": "0-2",
+        "token_span": [
+          0,
+          12
+        ]
+      }
+    ]
+  },
+  {
+    "batch_hash": "f91082d167274a9652919b102a13943f0cef07491f496982606aace96c9ccab5",
+    "batch_id": "batch-0001",
+    "offset": 1,
+    "samples": [
+      {
+        "doc_id": "train-indic-0",
+        "lane": "indic",
+        "loss_tokens": 11,
+        "sample_id": "1-0",
+        "token_span": [
+          0,
+          12
+        ]
+      },
+      {
+        "doc_id": "train-general-1",
+        "lane": "general",
+        "loss_tokens": 11,
+        "sample_id": "1-1",
+        "token_span": [
+          0,
+          12
+        ]
+      },
+      {
+        "doc_id": "train-long_context-0",
+        "lane": "long_context",
+        "loss_tokens": 11,
+        "sample_id": "1-2",
+        "token_span": [
+          0,
+          12
+        ]
+      }
+    ]
+  },
+  {
+    "batch_hash": "8f191fddad275b1a9cb9c06c450686d7c1afcd10a21eafe25fd9869c5448a6b9",
+    "batch_id": "batch-0002",
+    "offset": 2,
+    "samples": [
+      {
+        "doc_id": "train-reasoning-1",
+        "lane": "reasoning",
+        "loss_tokens": 11,
+        "sample_id": "2-0",
+        "token_span": [
+          0,
+          12
+        ]
+      },
+      {
+        "doc_id": "train-agentic-1",
+        "lane": "agentic",
+        "loss_tokens": 11,
+        "sample_id": "2-1",
+        "token_span": [
+          0,
+          12
+        ]
+      },
+      {
+        "doc_id": "train-general-2",
+        "lane": "general",
+        "loss_tokens": 11,
+        "sample_id": "2-2",
+        "token_span": [
+          0,
+          12
+        ]
+      }
+    ]
+  },
+  {
+    "batch_hash": "83a86856cb83d06b1f839ea9c885039466210e2e99a94fb727c21608a6f2b3bc",
+    "batch_id": "batch-0003",
+    "offset": 3,
+    "samples": [
+      {
+        "doc_id": "train-reasoning-2",
+        "lane": "reasoning",
+        "loss_tokens": 11,
+        "sample_id": "3-0",
+        "token_span": [
+          0,
+          12
+        ]
+      },
+      {
+        "doc_id": "train-indic-1",
+        "lane": "indic",
+        "loss_tokens": 11,
+        "sample_id": "3-1",
+        "token_span": [
+          0,
+          12
+        ]
+      },
+      {
+        "doc_id": "train-agentic-2",
+        "lane": "agentic",
+        "loss_tokens": 11,
+        "sample_id": "3-2",
+        "token_span": [
+          0,
+          12
+        ]
+      }
+    ]
+  },
+  {
+    "batch_hash": "ff9653fad2015dcb07553bd5cfded77276663a979f274b5ce0cfd0fdfeb810ba",
+    "batch_id": "batch-0004",
+    "offset": 4,
+    "samples": [
+      {
+        "doc_id": "train-reasoning-0",
+        "lane": "reasoning",
+        "loss_tokens": 11,
+        "sample_id": "4-0",
+        "token_span": [
+          0,
+          12
+        ]
+      },
+      {
+        "doc_id": "train-general-0",
+        "lane": "general",
+        "loss_tokens": 11,
+        "sample_id": "4-1",
+        "token_span": [
+          0,
+          12
+        ]
+      },
+      {
+        "doc_id": "train-long_context-1",
+        "lane": "long_context",
+        "loss_tokens": 11,
+        "sample_id": "4-2",
+        "token_span": [
+          0,
+          12
+        ]
+      }
+    ]
+  },
+  {
+    "batch_hash": "ad4c645cc86ae38e45dacfef1fc46d69f4408b22f41296e8fe83f8baf370a095",
+    "batch_id": "batch-0005",
+    "offset": 5,
+    "samples": [
+      {
+        "doc_id": "train-reasoning-1",
+        "lane": "reasoning",
+        "loss_tokens": 11,
+        "sample_id": "5-0",
+        "token_span": [
+          0,
+          12
+        ]
+      },
+      {
+        "doc_id": "train-agentic-0",
+        "lane": "agentic",
+        "loss_tokens": 11,
+        "sample_id": "5-1",
+        "token_span": [
+          0,
+          12
+        ]
+      },
+      {
+        "doc_id": "train-general-1",
+        "lane": "general",
+        "loss_tokens": 11,
+        "sample_id": "5-2",
+        "token_span": [
+          0,
+          12
+        ]
+      }
+    ]
+  }
+]

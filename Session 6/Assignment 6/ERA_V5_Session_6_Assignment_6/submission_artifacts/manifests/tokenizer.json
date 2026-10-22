@@ -1,0 +1,9 @@
+{
+  "bos": 256,
+  "encoding": "utf8",
+  "eos": 257,
+  "name": "utf8-byte-v1",
+  "normalization": "none",
+  "pad": 258,
+  "vocab_size": 259
+}

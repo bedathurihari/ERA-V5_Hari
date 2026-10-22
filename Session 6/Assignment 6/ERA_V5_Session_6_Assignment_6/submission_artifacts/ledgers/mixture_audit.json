@@ -1,0 +1,30 @@
+{
+  "actual_shares": {
+    "agentic": 0.2222222222222222,
+    "general": 0.2777777777777778,
+    "indic": 0.1111111111111111,
+    "long_context": 0.1111111111111111,
+    "reasoning": 0.2777777777777778
+  },
+  "per_lane_diff": {
+    "agentic": -0.002777777777777768,
+    "general": 0.02777777777777779,
+    "indic": -0.013888888888888895,
+    "long_context": 0.0111111111111111,
+    "reasoning": -0.022222222222222254
+  },
+  "planned_shares": {
+    "agentic": 0.22499999999999998,
+    "general": 0.25,
+    "indic": 0.125,
+    "long_context": 0.1,
+    "reasoning": 0.30000000000000004
+  },
+  "protected_floors": {
+    "agentic": 0.1,
+    "general": 0.2,
+    "indic": 0.1,
+    "long_context": 0.05,
+    "reasoning": 0.15
+  }
+}

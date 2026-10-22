@@ -1,0 +1,1634 @@
+[
+  {
+    "batch_id": "batch-0000",
+    "mean_loss": 5.553492225527273,
+    "model_hash_after": "7140a06e8a33154828d072ebd4095ed3e2601be051eebaa79a03124ff3ef28a0",
+    "offset": 0,
+    "token_losses": [
+      {
+        "doc_id": "train-general-0",
+        "lane": "general",
+        "loss": 5.5532027391,
+        "sample_id": "0-0",
+        "target_token": 69,
+        "token_position": 1
+      },
+      {
+        "doc_id": "train-general-0",
+        "lane": "general",
+        "loss": 5.5597137833,
+        "sample_id": "0-0",
+        "target_token": 97,
+        "token_position": 2
+      },
+      {
+        "doc_id": "train-general-0",
+        "lane": "general",
+        "loss": 5.5546440558,
+        "sample_id": "0-0",
+        "target_token": 114,
+        "token_position": 3
+      },
+      {
+        "doc_id": "train-general-0",
+        "lane": "general",
+        "loss": 5.5553285554,
+        "sample_id": "0-0",
+        "target_token": 116,
+        "token_position": 4
+      },
+      {
+        "doc_id": "train-general-0",
+        "lane": "general",
+        "loss": 5.5559779153,
+        "sample_id": "0-0",
+        "target_token": 104,
+        "token_position": 5
+      },
+      {
+        "doc_id": "train-general-0",
+        "lane": "general",
+        "loss": 5.5548628668,
+        "sample_id": "0-0",
+        "target_token": 32,
+        "token_position": 6
+      },
+      {
+        "doc_id": "train-general-0",
+        "lane": "general",
+        "loss": 5.5547702164,
+        "sample_id": "0-0",
+        "target_token": 114,
+        "token_position": 7
+      },
+      {
+        "doc_id": "train-general-0",
+        "lane": "general",
+        "loss": 5.5599771552,
+        "sample_id": "0-0",
+        "target_token": 111,
+        "token_position": 8
+      },
+      {
+        "doc_id": "train-general-0",
+        "lane": "general",
+        "loss": 5.5608134626,
+        "sample_id": "0-0",
+        "target_token": 116,
+        "token_position": 9
+      },
+      {
+        "doc_id": "train-general-0",
+        "lane": "general",
+        "loss": 5.5593971577,
+        "sample_id": "0-0",
+        "target_token": 97,
+        "token_position": 10
+      },
+      {
+        "doc_id": "train-general-0",
+        "lane": "general",
+        "loss": 5.5589606878,
+        "sample_id": "0-0",
+        "target_token": 116,
+        "token_position": 11
+      },
+      {
+        "doc_id": "train-reasoning-0",
+        "lane": "reasoning",
+        "loss": 5.5583230341,
+        "sample_id": "0-1",
+        "target_token": 84,
+        "token_position": 1
+      },
+      {
+        "doc_id": "train-reasoning-0",
+        "lane": "reasoning",
+        "loss": 5.5581814489,
+        "sample_id": "0-1",
+        "target_token": 111,
+        "token_position": 2
+      },
+      {
+        "doc_id": "train-reasoning-0",
+        "lane": "reasoning",
+        "loss": 5.5529895254,
+        "sample_id": "0-1",
+        "target_token": 32,
+        "token_position": 3
+      },
+      {
+        "doc_id": "train-reasoning-0",
+        "lane": "reasoning",
+        "loss": 5.5581115832,
+        "sample_id": "0-1",
+        "target_token": 115,
+        "token_position": 4
+      },
+      {
+        "doc_id": "train-reasoning-0",
+        "lane": "reasoning",
+        "loss": 5.5544872536,
+        "sample_id": "0-1",
+        "target_token": 111,
+        "token_position": 5
+      },
+      {
+        "doc_id": "train-reasoning-0",
+        "lane": "reasoning",
+        "loss": 5.5590550767,
+        "sample_id": "0-1",
+        "target_token": 108,
+        "token_position": 6
+      },
+      {
+        "doc_id": "train-reasoning-0",
+        "lane": "reasoning",
+        "loss": 5.5599853485,
+        "sample_id": "0-1",
+        "target_token": 118,
+        "token_position": 7
+      },
+      {
+        "doc_id": "train-reasoning-0",
+        "lane": "reasoning",
+        "loss": 5.5551429159,
+        "sample_id": "0-1",
+        "target_token": 101,
+        "token_position": 8
+      },
+      {
+        "doc_id": "train-reasoning-0",
+        "lane": "reasoning",
+        "loss": 5.5532971862,
+        "sample_id": "0-1",
+        "target_token": 32,
+        "token_position": 9
+      },
+      {
+        "doc_id": "train-reasoning-0",
+        "lane": "reasoning",
+        "loss": 5.5546067849,
+        "sample_id": "0-1",
+        "target_token": 97,
+        "token_position": 10
+      },
+      {
+        "doc_id": "train-reasoning-0",
+        "lane": "reasoning",
+        "loss": 5.5542052595,
+        "sample_id": "0-1",
+        "target_token": 32,
+        "token_position": 11
+      },
+      {
+        "doc_id": "train-agentic-0",
+        "lane": "agentic",
+        "loss": 5.5234601432,
+        "sample_id": "0-2",
+        "target_token": 84,
+        "token_position": 1
+      },
+      {
+        "doc_id": "train-agentic-0",
+        "lane": "agentic",
+        "loss": 5.553651196,
+        "sample_id": "0-2",
+        "target_token": 79,
+        "token_position": 2
+      },
+      {
+        "doc_id": "train-agentic-0",
+        "lane": "agentic",
+        "loss": 5.5527647876,
+        "sample_id": "0-2",
+        "target_token": 79,
+        "token_position": 3
+      },
+      {
+        "doc_id": "train-agentic-0",
+        "lane": "agentic",
+        "loss": 5.5593003601,
+        "sample_id": "0-2",
+        "target_token": 76,
+        "token_position": 4
+      },
+      {
+        "doc_id": "train-agentic-0",
+        "lane": "agentic",
+        "loss": 5.5538326449,
+        "sample_id": "0-2",
+        "target_token": 32,
+        "token_position": 5
+      },
+      {
+        "doc_id": "train-agentic-0",
+        "lane": "agentic",
+        "loss": 5.5233911865,
+        "sample_id": "0-2",
+        "target_token": 115,
+        "token_position": 6
+      },
+      {
+        "doc_id": "train-agentic-0",
+        "lane": "agentic",
+        "loss": 5.5591740191,
+        "sample_id": "0-2",
+        "target_token": 101,
+        "token_position": 7
+      },
+      {
+        "doc_id": "train-agentic-0",
+        "lane": "agentic",
+        "loss": 5.5521254513,
+        "sample_id": "0-2",
+        "target_token": 97,
+        "token_position": 8
+      },
+      {
+        "doc_id": "train-agentic-0",
+        "lane": "agentic",
+        "loss": 5.5200674501,
+        "sample_id": "0-2",
+        "target_token": 114,
+        "token_position": 9
+      },
+      {
+        "doc_id": "train-agentic-0",
+        "lane": "agentic",
+        "loss": 5.5597697794,
+        "sample_id": "0-2",
+        "target_token": 99,
+        "token_position": 10
+      },
+      {
+        "doc_id": "train-agentic-0",
+        "lane": "agentic",
+        "loss": 5.5616724119,
+        "sample_id": "0-2",
+        "target_token": 104,
+        "token_position": 11
+      }
+    ]
+  },
+  {
+    "batch_id": "batch-0001",
+    "mean_loss": 5.551511459184848,
+    "model_hash_after": "d5b3a8aed12de7953450cdb0b18e23e0cdface94b349891f77b129a099cb9f96",
+    "offset": 1,
+    "token_losses": [
+      {
+        "doc_id": "train-indic-0",
+        "lane": "indic",
+        "loss": 5.5599392717,
+        "sample_id": "1-0",
+        "target_token": 224,
+        "token_position": 1
+      },
+      {
+        "doc_id": "train-indic-0",
+        "lane": "indic",
+        "loss": 5.5597411172,
+        "sample_id": "1-0",
+        "target_token": 176,
+        "token_position": 2
+      },
+      {
+        "doc_id": "train-indic-0",
+        "lane": "indic",
+        "loss": 5.5604284163,
+        "sample_id": "1-0",
+        "target_token": 164,
+        "token_position": 3
+      },
+      {
+        "doc_id": "train-indic-0",
+        "lane": "indic",
+        "loss": 5.560817526,
+        "sample_id": "1-0",
+        "target_token": 224,
+        "token_position": 4
+      },
+      {
+        "doc_id": "train-indic-0",
+        "lane": "indic",
+        "loss": 5.5549896213,
+        "sample_id": "1-0",
+        "target_token": 177,
+        "token_position": 5
+      },
+      {
+        "doc_id": "train-indic-0",
+        "lane": "indic",
+        "loss": 5.5530093081,
+        "sample_id": "1-0",
+        "target_token": 134,
+        "token_position": 6
+      },
+      {
+        "doc_id": "train-indic-0",
+        "lane": "indic",
+        "loss": 5.5591721771,
+        "sample_id": "1-0",
+        "target_token": 224,
+        "token_position": 7
+      },
+      {
+        "doc_id": "train-indic-0",
+        "lane": "indic",
+        "loss": 5.5250199988,
+        "sample_id": "1-0",
+        "target_token": 176,
+        "token_position": 8
+      },
+      {
+        "doc_id": "train-indic-0",
+        "lane": "indic",
+        "loss": 5.5593808714,
+        "sample_id": "1-0",
+        "target_token": 178,
+        "token_position": 9
+      },
+      {
+        "doc_id": "train-indic-0",
+        "lane": "indic",
+        "loss": 5.5530704428,
+        "sample_id": "1-0",
+        "target_token": 224,
+        "token_position": 10
+      },
+      {
+        "doc_id": "train-indic-0",
+        "lane": "indic",
+        "loss": 5.5202746512,
+        "sample_id": "1-0",
+        "target_token": 177,
+        "token_position": 11
+      },
+      {
+        "doc_id": "train-general-1",
+        "lane": "general",
+        "loss": 5.5614166563,
+        "sample_id": "1-1",
+        "target_token": 65,
+        "token_position": 1
+      },
+      {
+        "doc_id": "train-general-1",
+        "lane": "general",
+        "loss": 5.5589256294,
+        "sample_id": "1-1",
+        "target_token": 32,
+        "token_position": 2
+      },
+      {
+        "doc_id": "train-general-1",
+        "lane": "general",
+        "loss": 5.5616887459,
+        "sample_id": "1-1",
+        "target_token": 99,
+        "token_position": 3
+      },
+      {
+        "doc_id": "train-general-1",
+        "lane": "general",
+        "loss": 5.561368399,
+        "sample_id": "1-1",
+        "target_token": 97,
+        "token_position": 4
+      },
+      {
+        "doc_id": "train-general-1",
+        "lane": "general",
+        "loss": 5.4852151736,
+        "sample_id": "1-1",
+        "target_token": 114,
+        "token_position": 5
+      },
+      {
+        "doc_id": "train-general-1",
+        "lane": "general",
+        "loss": 5.5596242647,
+        "sample_id": "1-1",
+        "target_token": 101,
+        "token_position": 6
+      },
+      {
+        "doc_id": "train-general-1",
+        "lane": "general",
+        "loss": 5.5557191364,
+        "sample_id": "1-1",
+        "target_token": 102,
+        "token_position": 7
+      },
+      {
+        "doc_id": "train-general-1",
+        "lane": "general",
+        "loss": 5.5611118627,
+        "sample_id": "1-1",
+        "target_token": 117,
+        "token_position": 8
+      },
+      {
+        "doc_id": "train-general-1",
+        "lane": "general",
+        "loss": 5.5604590603,
+        "sample_id": "1-1",
+        "target_token": 108,
+        "token_position": 9
+      },
+      {
+        "doc_id": "train-general-1",
+        "lane": "general",
+        "loss": 5.557724822,
+        "sample_id": "1-1",
+        "target_token": 32,
+        "token_position": 10
+      },
+      {
+        "doc_id": "train-general-1",
+        "lane": "general",
+        "loss": 5.5566727045,
+        "sample_id": "1-1",
+        "target_token": 100,
+        "token_position": 11
+      },
+      {
+        "doc_id": "train-long_context-0",
+        "lane": "long_context",
+        "loss": 5.5571675908,
+        "sample_id": "1-2",
+        "target_token": 99,
+        "token_position": 1
+      },
+      {
+        "doc_id": "train-long_context-0",
+        "lane": "long_context",
+        "loss": 5.5583112345,
+        "sample_id": "1-2",
+        "target_token": 111,
+        "token_position": 2
+      },
+      {
+        "doc_id": "train-long_context-0",
+        "lane": "long_context",
+        "loss": 5.5590765159,
+        "sample_id": "1-2",
+        "target_token": 110,
+        "token_position": 3
+      },
+      {
+        "doc_id": "train-long_context-0",
+        "lane": "long_context",
+        "loss": 5.556136421,
+        "sample_id": "1-2",
+        "target_token": 116,
+        "token_position": 4
+      },
+      {
+        "doc_id": "train-long_context-0",
+        "lane": "long_context",
+        "loss": 5.5566605831,
+        "sample_id": "1-2",
+        "target_token": 101,
+        "token_position": 5
+      },
+      {
+        "doc_id": "train-long_context-0",
+        "lane": "long_context",
+        "loss": 5.5534541745,
+        "sample_id": "1-2",
+        "target_token": 120,
+        "token_position": 6
+      },
+      {
+        "doc_id": "train-long_context-0",
+        "lane": "long_context",
+        "loss": 5.552899457,
+        "sample_id": "1-2",
+        "target_token": 116,
+        "token_position": 7
+      },
+      {
+        "doc_id": "train-long_context-0",
+        "lane": "long_context",
+        "loss": 5.5582202422,
+        "sample_id": "1-2",
+        "target_token": 32,
+        "token_position": 8
+      },
+      {
+        "doc_id": "train-long_context-0",
+        "lane": "long_context",
+        "loss": 5.5206252387,
+        "sample_id": "1-2",
+        "target_token": 114,
+        "token_position": 9
+      },
+      {
+        "doc_id": "train-long_context-0",
+        "lane": "long_context",
+        "loss": 5.5247610189,
+        "sample_id": "1-2",
+        "target_token": 101,
+        "token_position": 10
+      },
+      {
+        "doc_id": "train-long_context-0",
+        "lane": "long_context",
+        "loss": 5.5567958198,
+        "sample_id": "1-2",
+        "target_token": 116,
+        "token_position": 11
+      }
+    ]
+  },
+  {
+    "batch_id": "batch-0002",
+    "mean_loss": 5.5393189491151515,
+    "model_hash_after": "5785dc613e49425dc3a8ddd00fb2530e1a27f0a6da094c2af6dca23a0c1f1964",
+    "offset": 2,
+    "token_losses": [
+      {
+        "doc_id": "train-reasoning-1",
+        "lane": "reasoning",
+        "loss": 5.5610616197,
+        "sample_id": "2-0",
+        "target_token": 73,
+        "token_position": 1
+      },
+      {
+        "doc_id": "train-reasoning-1",
+        "lane": "reasoning",
+        "loss": 5.5615817326,
+        "sample_id": "2-0",
+        "target_token": 102,
+        "token_position": 2
+      },
+      {
+        "doc_id": "train-reasoning-1",
+        "lane": "reasoning",
+        "loss": 5.5563683572,
+        "sample_id": "2-0",
+        "target_token": 32,
+        "token_position": 3
+      },
+      {
+        "doc_id": "train-reasoning-1",
+        "lane": "reasoning",
+        "loss": 5.520324358,
+        "sample_id": "2-0",
+        "target_token": 97,
+        "token_position": 4
+      },
+      {
+        "doc_id": "train-reasoning-1",
+        "lane": "reasoning",
+        "loss": 5.5532456742,
+        "sample_id": "2-0",
+        "target_token": 108,
+        "token_position": 5
+      },
+      {
+        "doc_id": "train-reasoning-1",
+        "lane": "reasoning",
+        "loss": 5.5607554775,
+        "sample_id": "2-0",
+        "target_token": 108,
+        "token_position": 6
+      },
+      {
+        "doc_id": "train-reasoning-1",
+        "lane": "reasoning",
+        "loss": 5.5230037404,
+        "sample_id": "2-0",
+        "target_token": 32,
+        "token_position": 7
+      },
+      {
+        "doc_id": "train-reasoning-1",
+        "lane": "reasoning",
+        "loss": 5.5629642359,
+        "sample_id": "2-0",
+        "target_token": 98,
+        "token_position": 8
+      },
+      {
+        "doc_id": "train-reasoning-1",
+        "lane": "reasoning",
+        "loss": 5.5525432021,
+        "sample_id": "2-0",
+        "target_token": 105,
+        "token_position": 9
+      },
+      {
+        "doc_id": "train-reasoning-1",
+        "lane": "reasoning",
+        "loss": 5.5541323213,
+        "sample_id": "2-0",
+        "target_token": 114,
+        "token_position": 10
+      },
+      {
+        "doc_id": "train-reasoning-1",
+        "lane": "reasoning",
+        "loss": 5.5559276963,
+        "sample_id": "2-0",
+        "target_token": 100,
+        "token_position": 11
+      },
+      {
+        "doc_id": "train-agentic-1",
+        "lane": "agentic",
+        "loss": 5.4891933129,
+        "sample_id": "2-1",
+        "target_token": 84,
+        "token_position": 1
+      },
+      {
+        "doc_id": "train-agentic-1",
+        "lane": "agentic",
+        "loss": 5.5187895801,
+        "sample_id": "2-1",
+        "target_token": 79,
+        "token_position": 2
+      },
+      {
+        "doc_id": "train-agentic-1",
+        "lane": "agentic",
+        "loss": 5.5180459557,
+        "sample_id": "2-1",
+        "target_token": 79,
+        "token_position": 3
+      },
+      {
+        "doc_id": "train-agentic-1",
+        "lane": "agentic",
+        "loss": 5.5245846049,
+        "sample_id": "2-1",
+        "target_token": 76,
+        "token_position": 4
+      },
+      {
+        "doc_id": "train-agentic-1",
+        "lane": "agentic",
+        "loss": 5.5189709799,
+        "sample_id": "2-1",
+        "target_token": 32,
+        "token_position": 5
+      },
+      {
+        "doc_id": "train-agentic-1",
+        "lane": "agentic",
+        "loss": 5.5274006834,
+        "sample_id": "2-1",
+        "target_token": 99,
+        "token_position": 6
+      },
+      {
+        "doc_id": "train-agentic-1",
+        "lane": "agentic",
+        "loss": 5.5266461539,
+        "sample_id": "2-1",
+        "target_token": 97,
+        "token_position": 7
+      },
+      {
+        "doc_id": "train-agentic-1",
+        "lane": "agentic",
+        "loss": 5.5183841619,
+        "sample_id": "2-1",
+        "target_token": 108,
+        "token_position": 8
+      },
+      {
+        "doc_id": "train-agentic-1",
+        "lane": "agentic",
+        "loss": 5.5622579451,
+        "sample_id": "2-1",
+        "target_token": 99,
+        "token_position": 9
+      },
+      {
+        "doc_id": "train-agentic-1",
+        "lane": "agentic",
+        "loss": 5.5529221323,
+        "sample_id": "2-1",
+        "target_token": 117,
+        "token_position": 10
+      },
+      {
+        "doc_id": "train-agentic-1",
+        "lane": "agentic",
+        "loss": 5.5255955894,
+        "sample_id": "2-1",
+        "target_token": 108,
+        "token_position": 11
+      },
+      {
+        "doc_id": "train-general-2",
+        "lane": "general",
+        "loss": 5.5543391831,
+        "sample_id": "2-2",
+        "target_token": 83,
+        "token_position": 1
+      },
+      {
+        "doc_id": "train-general-2",
+        "lane": "general",
+        "loss": 5.5550685244,
+        "sample_id": "2-2",
+        "target_token": 105,
+        "token_position": 2
+      },
+      {
+        "doc_id": "train-general-2",
+        "lane": "general",
+        "loss": 5.5585655669,
+        "sample_id": "2-2",
+        "target_token": 109,
+        "token_position": 3
+      },
+      {
+        "doc_id": "train-general-2",
+        "lane": "general",
+        "loss": 5.5566680362,
+        "sample_id": "2-2",
+        "target_token": 112,
+        "token_position": 4
+      },
+      {
+        "doc_id": "train-general-2",
+        "lane": "general",
+        "loss": 5.5590302739,
+        "sample_id": "2-2",
+        "target_token": 108,
+        "token_position": 5
+      },
+      {
+        "doc_id": "train-general-2",
+        "lane": "general",
+        "loss": 5.5586667933,
+        "sample_id": "2-2",
+        "target_token": 101,
+        "token_position": 6
+      },
+      {
+        "doc_id": "train-general-2",
+        "lane": "general",
+        "loss": 5.5190080343,
+        "sample_id": "2-2",
+        "target_token": 32,
+        "token_position": 7
+      },
+      {
+        "doc_id": "train-general-2",
+        "lane": "general",
+        "loss": 5.4894328172,
+        "sample_id": "2-2",
+        "target_token": 115,
+        "token_position": 8
+      },
+      {
+        "doc_id": "train-general-2",
+        "lane": "general",
+        "loss": 5.5523998264,
+        "sample_id": "2-2",
+        "target_token": 116,
+        "token_position": 9
+      },
+      {
+        "doc_id": "train-general-2",
+        "lane": "general",
+        "loss": 5.5248176888,
+        "sample_id": "2-2",
+        "target_token": 97,
+        "token_position": 10
+      },
+      {
+        "doc_id": "train-general-2",
+        "lane": "general",
+        "loss": 5.5248290616,
+        "sample_id": "2-2",
+        "target_token": 116,
+        "token_position": 11
+      }
+    ]
+  },
+  {
+    "batch_id": "batch-0003",
+    "mean_loss": 5.525972724769697,
+    "model_hash_after": "4bfabef570023e72ee4ca880ae4420d6d66fe20873b4b95454782f11bc3feeda",
+    "offset": 3,
+    "token_losses": [
+      {
+        "doc_id": "train-reasoning-2",
+        "lane": "reasoning",
+        "loss": 5.5551039621,
+        "sample_id": "3-0",
+        "target_token": 67,
+        "token_position": 1
+      },
+      {
+        "doc_id": "train-reasoning-2",
+        "lane": "reasoning",
+        "loss": 5.553597114,
+        "sample_id": "3-0",
+        "target_token": 111,
+        "token_position": 2
+      },
+      {
+        "doc_id": "train-reasoning-2",
+        "lane": "reasoning",
+        "loss": 5.5603532352,
+        "sample_id": "3-0",
+        "target_token": 109,
+        "token_position": 3
+      },
+      {
+        "doc_id": "train-reasoning-2",
+        "lane": "reasoning",
+        "loss": 5.5218055972,
+        "sample_id": "3-0",
+        "target_token": 112,
+        "token_position": 4
+      },
+      {
+        "doc_id": "train-reasoning-2",
+        "lane": "reasoning",
+        "loss": 5.55348602,
+        "sample_id": "3-0",
+        "target_token": 97,
+        "token_position": 5
+      },
+      {
+        "doc_id": "train-reasoning-2",
+        "lane": "reasoning",
+        "loss": 5.4508412716,
+        "sample_id": "3-0",
+        "target_token": 114,
+        "token_position": 6
+      },
+      {
+        "doc_id": "train-reasoning-2",
+        "lane": "reasoning",
+        "loss": 5.4900544074,
+        "sample_id": "3-0",
+        "target_token": 101,
+        "token_position": 7
+      },
+      {
+        "doc_id": "train-reasoning-2",
+        "lane": "reasoning",
+        "loss": 5.4841560559,
+        "sample_id": "3-0",
+        "target_token": 32,
+        "token_position": 8
+      },
+      {
+        "doc_id": "train-reasoning-2",
+        "lane": "reasoning",
+        "loss": 5.5544990053,
+        "sample_id": "3-0",
+        "target_token": 116,
+        "token_position": 9
+      },
+      {
+        "doc_id": "train-reasoning-2",
+        "lane": "reasoning",
+        "loss": 5.5575105297,
+        "sample_id": "3-0",
+        "target_token": 119,
+        "token_position": 10
+      },
+      {
+        "doc_id": "train-reasoning-2",
+        "lane": "reasoning",
+        "loss": 5.5610900714,
+        "sample_id": "3-0",
+        "target_token": 111,
+        "token_position": 11
+      },
+      {
+        "doc_id": "train-indic-1",
+        "lane": "indic",
+        "loss": 5.5259358061,
+        "sample_id": "3-1",
+        "target_token": 224,
+        "token_position": 1
+      },
+      {
+        "doc_id": "train-indic-1",
+        "lane": "indic",
+        "loss": 5.5555522667,
+        "sample_id": "3-1",
+        "target_token": 164,
+        "token_position": 2
+      },
+      {
+        "doc_id": "train-indic-1",
+        "lane": "indic",
+        "loss": 5.5612433956,
+        "sample_id": "3-1",
+        "target_token": 185,
+        "token_position": 3
+      },
+      {
+        "doc_id": "train-indic-1",
+        "lane": "indic",
+        "loss": 5.5539735747,
+        "sample_id": "3-1",
+        "target_token": 224,
+        "token_position": 4
+      },
+      {
+        "doc_id": "train-indic-1",
+        "lane": "indic",
+        "loss": 5.5206901268,
+        "sample_id": "3-1",
+        "target_token": 164,
+        "token_position": 5
+      },
+      {
+        "doc_id": "train-indic-1",
+        "lane": "indic",
+        "loss": 5.5560198278,
+        "sample_id": "3-1",
+        "target_token": 191,
+        "token_position": 6
+      },
+      {
+        "doc_id": "train-indic-1",
+        "lane": "indic",
+        "loss": 5.5543936698,
+        "sample_id": "3-1",
+        "target_token": 224,
+        "token_position": 7
+      },
+      {
+        "doc_id": "train-indic-1",
+        "lane": "indic",
+        "loss": 5.4858376704,
+        "sample_id": "3-1",
+        "target_token": 164,
+        "token_position": 8
+      },
+      {
+        "doc_id": "train-indic-1",
+        "lane": "indic",
+        "loss": 5.5570787355,
+        "sample_id": "3-1",
+        "target_token": 168,
+        "token_position": 9
+      },
+      {
+        "doc_id": "train-indic-1",
+        "lane": "indic",
+        "loss": 5.5565981984,
+        "sample_id": "3-1",
+        "target_token": 224,
+        "token_position": 10
+      },
+      {
+        "doc_id": "train-indic-1",
+        "lane": "indic",
+        "loss": 5.5552786545,
+        "sample_id": "3-1",
+        "target_token": 165,
+        "token_position": 11
+      },
+      {
+        "doc_id": "train-agentic-2",
+        "lane": "agentic",
+        "loss": 5.4548109966,
+        "sample_id": "3-2",
+        "target_token": 84,
+        "token_position": 1
+      },
+      {
+        "doc_id": "train-agentic-2",
+        "lane": "agentic",
+        "loss": 5.4839376659,
+        "sample_id": "3-2",
+        "target_token": 79,
+        "token_position": 2
+      },
+      {
+        "doc_id": "train-agentic-2",
+        "lane": "agentic",
+        "loss": 5.4833465972,
+        "sample_id": "3-2",
+        "target_token": 79,
+        "token_position": 3
+      },
+      {
+        "doc_id": "train-agentic-2",
+        "lane": "agentic",
+        "loss": 5.4898884254,
+        "sample_id": "3-2",
+        "target_token": 76,
+        "token_position": 4
+      },
+      {
+        "doc_id": "train-agentic-2",
+        "lane": "agentic",
+        "loss": 5.484119015,
+        "sample_id": "3-2",
+        "target_token": 32,
+        "token_position": 5
+      },
+      {
+        "doc_id": "train-agentic-2",
+        "lane": "agentic",
+        "loss": 5.4865281548,
+        "sample_id": "3-2",
+        "target_token": 114,
+        "token_position": 6
+      },
+      {
+        "doc_id": "train-agentic-2",
+        "lane": "agentic",
+        "loss": 5.4552107453,
+        "sample_id": "3-2",
+        "target_token": 101,
+        "token_position": 7
+      },
+      {
+        "doc_id": "train-agentic-2",
+        "lane": "agentic",
+        "loss": 5.5222336074,
+        "sample_id": "3-2",
+        "target_token": 116,
+        "token_position": 8
+      },
+      {
+        "doc_id": "train-agentic-2",
+        "lane": "agentic",
+        "loss": 5.5621560486,
+        "sample_id": "3-2",
+        "target_token": 114,
+        "token_position": 9
+      },
+      {
+        "doc_id": "train-agentic-2",
+        "lane": "agentic",
+        "loss": 5.5542807179,
+        "sample_id": "3-2",
+        "target_token": 105,
+        "token_position": 10
+      },
+      {
+        "doc_id": "train-agentic-2",
+        "lane": "agentic",
+        "loss": 5.5554887472,
+        "sample_id": "3-2",
+        "target_token": 101,
+        "token_position": 11
+      }
+    ]
+  },
+  {
+    "batch_id": "batch-0004",
+    "mean_loss": 5.509790228227272,
+    "model_hash_after": "4bd9fe0192ee6d441c3008dbd510e7fbc07184105666aa49f3ecaa6a87c251e9",
+    "offset": 4,
+    "token_losses": [
+      {
+        "doc_id": "train-reasoning-0",
+        "lane": "reasoning",
+        "loss": 5.4199777815,
+        "sample_id": "4-0",
+        "target_token": 84,
+        "token_position": 1
+      },
+      {
+        "doc_id": "train-reasoning-0",
+        "lane": "reasoning",
+        "loss": 5.5237610621,
+        "sample_id": "4-0",
+        "target_token": 111,
+        "token_position": 2
+      },
+      {
+        "doc_id": "train-reasoning-0",
+        "lane": "reasoning",
+        "loss": 5.5185554748,
+        "sample_id": "4-0",
+        "target_token": 32,
+        "token_position": 3
+      },
+      {
+        "doc_id": "train-reasoning-0",
+        "lane": "reasoning",
+        "loss": 5.454903738,
+        "sample_id": "4-0",
+        "target_token": 115,
+        "token_position": 4
+      },
+      {
+        "doc_id": "train-reasoning-0",
+        "lane": "reasoning",
+        "loss": 5.5199109541,
+        "sample_id": "4-0",
+        "target_token": 111,
+        "token_position": 5
+      },
+      {
+        "doc_id": "train-reasoning-0",
+        "lane": "reasoning",
+        "loss": 5.5246224917,
+        "sample_id": "4-0",
+        "target_token": 108,
+        "token_position": 6
+      },
+      {
+        "doc_id": "train-reasoning-0",
+        "lane": "reasoning",
+        "loss": 5.5258342198,
+        "sample_id": "4-0",
+        "target_token": 118,
+        "token_position": 7
+      },
+      {
+        "doc_id": "train-reasoning-0",
+        "lane": "reasoning",
+        "loss": 5.520280893,
+        "sample_id": "4-0",
+        "target_token": 101,
+        "token_position": 8
+      },
+      {
+        "doc_id": "train-reasoning-0",
+        "lane": "reasoning",
+        "loss": 5.4494718028,
+        "sample_id": "4-0",
+        "target_token": 32,
+        "token_position": 9
+      },
+      {
+        "doc_id": "train-reasoning-0",
+        "lane": "reasoning",
+        "loss": 5.4863946039,
+        "sample_id": "4-0",
+        "target_token": 97,
+        "token_position": 10
+      },
+      {
+        "doc_id": "train-reasoning-0",
+        "lane": "reasoning",
+        "loss": 5.5202402863,
+        "sample_id": "4-0",
+        "target_token": 32,
+        "token_position": 11
+      },
+      {
+        "doc_id": "train-general-0",
+        "lane": "general",
+        "loss": 5.5201058776,
+        "sample_id": "4-1",
+        "target_token": 69,
+        "token_position": 1
+      },
+      {
+        "doc_id": "train-general-0",
+        "lane": "general",
+        "loss": 5.5248505148,
+        "sample_id": "4-1",
+        "target_token": 97,
+        "token_position": 2
+      },
+      {
+        "doc_id": "train-general-0",
+        "lane": "general",
+        "loss": 5.4161723142,
+        "sample_id": "4-1",
+        "target_token": 114,
+        "token_position": 3
+      },
+      {
+        "doc_id": "train-general-0",
+        "lane": "general",
+        "loss": 5.5216339851,
+        "sample_id": "4-1",
+        "target_token": 116,
+        "token_position": 4
+      },
+      {
+        "doc_id": "train-general-0",
+        "lane": "general",
+        "loss": 5.5219730584,
+        "sample_id": "4-1",
+        "target_token": 104,
+        "token_position": 5
+      },
+      {
+        "doc_id": "train-general-0",
+        "lane": "general",
+        "loss": 5.5200009204,
+        "sample_id": "4-1",
+        "target_token": 32,
+        "token_position": 6
+      },
+      {
+        "doc_id": "train-general-0",
+        "lane": "general",
+        "loss": 5.452015226,
+        "sample_id": "4-1",
+        "target_token": 114,
+        "token_position": 7
+      },
+      {
+        "doc_id": "train-general-0",
+        "lane": "general",
+        "loss": 5.526281464,
+        "sample_id": "4-1",
+        "target_token": 111,
+        "token_position": 8
+      },
+      {
+        "doc_id": "train-general-0",
+        "lane": "general",
+        "loss": 5.5268094087,
+        "sample_id": "4-1",
+        "target_token": 116,
+        "token_position": 9
+      },
+      {
+        "doc_id": "train-general-0",
+        "lane": "general",
+        "loss": 5.4904086309,
+        "sample_id": "4-1",
+        "target_token": 97,
+        "token_position": 10
+      },
+      {
+        "doc_id": "train-general-0",
+        "lane": "general",
+        "loss": 5.4904571529,
+        "sample_id": "4-1",
+        "target_token": 116,
+        "token_position": 11
+      },
+      {
+        "doc_id": "train-long_context-1",
+        "lane": "long_context",
+        "loss": 5.5581564877,
+        "sample_id": "4-2",
+        "target_token": 100,
+        "token_position": 1
+      },
+      {
+        "doc_id": "train-long_context-1",
+        "lane": "long_context",
+        "loss": 5.5550503309,
+        "sample_id": "4-2",
+        "target_token": 111,
+        "token_position": 2
+      },
+      {
+        "doc_id": "train-long_context-1",
+        "lane": "long_context",
+        "loss": 5.5628354565,
+        "sample_id": "4-2",
+        "target_token": 99,
+        "token_position": 3
+      },
+      {
+        "doc_id": "train-long_context-1",
+        "lane": "long_context",
+        "loss": 5.5180607131,
+        "sample_id": "4-2",
+        "target_token": 117,
+        "token_position": 4
+      },
+      {
+        "doc_id": "train-long_context-1",
+        "lane": "long_context",
+        "loss": 5.5531871503,
+        "sample_id": "4-2",
+        "target_token": 109,
+        "token_position": 5
+      },
+      {
+        "doc_id": "train-long_context-1",
+        "lane": "long_context",
+        "loss": 5.5539787007,
+        "sample_id": "4-2",
+        "target_token": 101,
+        "token_position": 6
+      },
+      {
+        "doc_id": "train-long_context-1",
+        "lane": "long_context",
+        "loss": 5.5567761034,
+        "sample_id": "4-2",
+        "target_token": 110,
+        "token_position": 7
+      },
+      {
+        "doc_id": "train-long_context-1",
+        "lane": "long_context",
+        "loss": 5.5212741269,
+        "sample_id": "4-2",
+        "target_token": 116,
+        "token_position": 8
+      },
+      {
+        "doc_id": "train-long_context-1",
+        "lane": "long_context",
+        "loss": 5.5240857027,
+        "sample_id": "4-2",
+        "target_token": 32,
+        "token_position": 9
+      },
+      {
+        "doc_id": "train-long_context-1",
+        "lane": "long_context",
+        "loss": 5.420410277,
+        "sample_id": "4-2",
+        "target_token": 115,
+        "token_position": 10
+      },
+      {
+        "doc_id": "train-long_context-1",
+        "lane": "long_context",
+        "loss": 5.5246006213,
+        "sample_id": "4-2",
+        "target_token": 101,
+        "token_position": 11
+      }
+    ]
+  },
+  {
+    "batch_id": "batch-0005",
+    "mean_loss": 5.483560509090909,
+    "model_hash_after": "5834f533424caa130079d5a9434c54a4e053789c9c73f49ab090e59a0670749a",
+    "offset": 5,
+    "token_losses": [
+      {
+        "doc_id": "train-reasoning-1",
+        "lane": "reasoning",
+        "loss": 5.5273854529,
+        "sample_id": "5-0",
+        "target_token": 73,
+        "token_position": 1
+      },
+      {
+        "doc_id": "train-reasoning-1",
+        "lane": "reasoning",
+        "loss": 5.526717957,
+        "sample_id": "5-0",
+        "target_token": 102,
+        "token_position": 2
+      },
+      {
+        "doc_id": "train-reasoning-1",
+        "lane": "reasoning",
+        "loss": 5.5215059994,
+        "sample_id": "5-0",
+        "target_token": 32,
+        "token_position": 3
+      },
+      {
+        "doc_id": "train-reasoning-1",
+        "lane": "reasoning",
+        "loss": 5.45189223,
+        "sample_id": "5-0",
+        "target_token": 97,
+        "token_position": 4
+      },
+      {
+        "doc_id": "train-reasoning-1",
+        "lane": "reasoning",
+        "loss": 5.4843261724,
+        "sample_id": "5-0",
+        "target_token": 108,
+        "token_position": 5
+      },
+      {
+        "doc_id": "train-reasoning-1",
+        "lane": "reasoning",
+        "loss": 5.5264669043,
+        "sample_id": "5-0",
+        "target_token": 108,
+        "token_position": 6
+      },
+      {
+        "doc_id": "train-reasoning-1",
+        "lane": "reasoning",
+        "loss": 5.4887465537,
+        "sample_id": "5-0",
+        "target_token": 32,
+        "token_position": 7
+      },
+      {
+        "doc_id": "train-reasoning-1",
+        "lane": "reasoning",
+        "loss": 5.5294715388,
+        "sample_id": "5-0",
+        "target_token": 98,
+        "token_position": 8
+      },
+      {
+        "doc_id": "train-reasoning-1",
+        "lane": "reasoning",
+        "loss": 5.5176818899,
+        "sample_id": "5-0",
+        "target_token": 105,
+        "token_position": 9
+      },
+      {
+        "doc_id": "train-reasoning-1",
+        "lane": "reasoning",
+        "loss": 5.5195558765,
+        "sample_id": "5-0",
+        "target_token": 114,
+        "token_position": 10
+      },
+      {
+        "doc_id": "train-reasoning-1",
+        "lane": "reasoning",
+        "loss": 5.5218111127,
+        "sample_id": "5-0",
+        "target_token": 100,
+        "token_position": 11
+      },
+      {
+        "doc_id": "train-agentic-0",
+        "lane": "agentic",
+        "loss": 5.3856526514,
+        "sample_id": "5-1",
+        "target_token": 84,
+        "token_position": 1
+      },
+      {
+        "doc_id": "train-agentic-0",
+        "lane": "agentic",
+        "loss": 5.4492532971,
+        "sample_id": "5-1",
+        "target_token": 79,
+        "token_position": 2
+      },
+      {
+        "doc_id": "train-agentic-0",
+        "lane": "agentic",
+        "loss": 5.4486673829,
+        "sample_id": "5-1",
+        "target_token": 79,
+        "token_position": 3
+      },
+      {
+        "doc_id": "train-agentic-0",
+        "lane": "agentic",
+        "loss": 5.4552124953,
+        "sample_id": "5-1",
+        "target_token": 76,
+        "token_position": 4
+      },
+      {
+        "doc_id": "train-agentic-0",
+        "lane": "agentic",
+        "loss": 5.4492770899,
+        "sample_id": "5-1",
+        "target_token": 32,
+        "token_position": 5
+      },
+      {
+        "doc_id": "train-agentic-0",
+        "lane": "agentic",
+        "loss": 5.3859320304,
+        "sample_id": "5-1",
+        "target_token": 115,
+        "token_position": 6
+      },
+      {
+        "doc_id": "train-agentic-0",
+        "lane": "agentic",
+        "loss": 5.4897470632,
+        "sample_id": "5-1",
+        "target_token": 101,
+        "token_position": 7
+      },
+      {
+        "doc_id": "train-agentic-0",
+        "lane": "agentic",
+        "loss": 5.5184441035,
+        "sample_id": "5-1",
+        "target_token": 97,
+        "token_position": 8
+      },
+      {
+        "doc_id": "train-agentic-0",
+        "lane": "agentic",
+        "loss": 5.3816975474,
+        "sample_id": "5-1",
+        "target_token": 114,
+        "token_position": 9
+      },
+      {
+        "doc_id": "train-agentic-0",
+        "lane": "agentic",
+        "loss": 5.5262256419,
+        "sample_id": "5-1",
+        "target_token": 99,
+        "token_position": 10
+      },
+      {
+        "doc_id": "train-agentic-0",
+        "lane": "agentic",
+        "loss": 5.5275259396,
+        "sample_id": "5-1",
+        "target_token": 104,
+        "token_position": 11
+      },
+      {
+        "doc_id": "train-general-1",
+        "lane": "general",
+        "loss": 5.5283350017,
+        "sample_id": "5-2",
+        "target_token": 65,
+        "token_position": 1
+      },
+      {
+        "doc_id": "train-general-1",
+        "lane": "general",
+        "loss": 5.5240625753,
+        "sample_id": "5-2",
+        "target_token": 32,
+        "token_position": 2
+      },
+      {
+        "doc_id": "train-general-1",
+        "lane": "general",
+        "loss": 5.4941345659,
+        "sample_id": "5-2",
+        "target_token": 99,
+        "token_position": 3
+      },
+      {
+        "doc_id": "train-general-1",
+        "lane": "general",
+        "loss": 5.4922418001,
+        "sample_id": "5-2",
+        "target_token": 97,
+        "token_position": 4
+      },
+      {
+        "doc_id": "train-general-1",
+        "lane": "general",
+        "loss": 5.3468872097,
+        "sample_id": "5-2",
+        "target_token": 114,
+        "token_position": 5
+      },
+      {
+        "doc_id": "train-general-1",
+        "lane": "general",
+        "loss": 5.4211821638,
+        "sample_id": "5-2",
+        "target_token": 101,
+        "token_position": 6
+      },
+      {
+        "doc_id": "train-general-1",
+        "lane": "general",
+        "loss": 5.5220379819,
+        "sample_id": "5-2",
+        "target_token": 102,
+        "token_position": 7
+      },
+      {
+        "doc_id": "train-general-1",
+        "lane": "general",
+        "loss": 5.5265366269,
+        "sample_id": "5-2",
+        "target_token": 117,
+        "token_position": 8
+      },
+      {
+        "doc_id": "train-general-1",
+        "lane": "general",
+        "loss": 5.4908890037,
+        "sample_id": "5-2",
+        "target_token": 108,
+        "token_position": 9
+      },
+      {
+        "doc_id": "train-general-1",
+        "lane": "general",
+        "loss": 5.4539032695,
+        "sample_id": "5-2",
+        "target_token": 32,
+        "token_position": 10
+      },
+      {
+        "doc_id": "train-general-1",
+        "lane": "general",
+        "loss": 5.5240896713,
+        "sample_id": "5-2",
+        "target_token": 100,
+        "token_position": 11
+      }
+    ]
+  }
+]

@@ -1,0 +1,9 @@
+{
+  "allocated_token_slots": 216,
+  "batches_per_second": 8.91229372089566,
+  "elapsed_seconds": 0.6732273629999952,
+  "loss_bearing_tokens": 198,
+  "loss_token_utilization": 0.9166666666666666,
+  "packing_utilization": 1.0,
+  "useful_loss_tokens_per_second": 294.10569278955677
+}

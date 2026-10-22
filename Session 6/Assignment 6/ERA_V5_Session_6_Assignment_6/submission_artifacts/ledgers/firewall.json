@@ -1,0 +1,14 @@
+{
+  "blocked": [
+    "validation_validation",
+    "evaluation_evaluation"
+  ],
+  "reason": "split_not_train",
+  "train_allowlist": [
+    "train_general",
+    "train_reasoning",
+    "train_agentic",
+    "train_indic",
+    "train_long_context"
+  ]
+}

@@ -1,0 +1,121 @@
+{
+  "actual_counts": {
+    "agentic": 4,
+    "general": 5,
+    "indic": 2,
+    "long_context": 2,
+    "reasoning": 5
+  },
+  "planned_counts": {
+    "agentic": 4.05,
+    "general": 4.5,
+    "indic": 2.25,
+    "long_context": 1.8,
+    "reasoning": 5.4
+  },
+  "protected_floors": {
+    "agentic": 0.1,
+    "general": 0.2,
+    "indic": 0.1,
+    "long_context": 0.05,
+    "reasoning": 0.15
+  },
+  "schedule": [
+    {
+      "lane": "general",
+      "stage": "foundation"
+    },
+    {
+      "lane": "reasoning",
+      "stage": "foundation"
+    },
+    {
+      "lane": "agentic",
+      "stage": "foundation"
+    },
+    {
+      "lane": "indic",
+      "stage": "foundation"
+    },
+    {
+      "lane": "general",
+      "stage": "foundation"
+    },
+    {
+      "lane": "long_context",
+      "stage": "foundation"
+    },
+    {
+      "lane": "reasoning",
+      "stage": "foundation"
+    },
+    {
+      "lane": "agentic",
+      "stage": "foundation"
+    },
+    {
+      "lane": "general",
+      "stage": "foundation"
+    },
+    {
+      "lane": "reasoning",
+      "stage": "reasoning_focus"
+    },
+    {
+      "lane": "indic",
+      "stage": "reasoning_focus"
+    },
+    {
+      "lane": "agentic",
+      "stage": "reasoning_focus"
+    },
+    {
+      "lane": "reasoning",
+      "stage": "reasoning_focus"
+    },
+    {
+      "lane": "general",
+      "stage": "reasoning_focus"
+    },
+    {
+      "lane": "long_context",
+      "stage": "reasoning_focus"
+    },
+    {
+      "lane": "reasoning",
+      "stage": "reasoning_focus"
+    },
+    {
+      "lane": "agentic",
+      "stage": "reasoning_focus"
+    },
+    {
+      "lane": "general",
+      "stage": "reasoning_focus"
+    }
+  ],
+  "stages": [
+    {
+      "name": "foundation",
+      "steps": 3,
+      "weights": {
+        "agentic": 0.2,
+        "general": 0.3,
+        "indic": 0.15,
+        "long_context": 0.1,
+        "reasoning": 0.25
+      }
+    },
+    {
+      "name": "reasoning_focus",
+      "steps": 3,
+      "weights": {
+        "agentic": 0.25,
+        "general": 0.2,
+        "indic": 0.1,
+        "long_context": 0.1,
+        "reasoning": 0.35
+      }
+    }
+  ]
+}

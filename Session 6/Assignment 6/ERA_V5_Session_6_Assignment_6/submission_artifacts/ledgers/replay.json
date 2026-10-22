@@ -1,0 +1,119 @@
+[
+  {
+    "batch_id": "batch-0001",
+    "original_hash": "f91082d167274a9652919b102a13943f0cef07491f496982606aace96c9ccab5",
+    "original_spans": [
+      [
+        "train-indic-0",
+        0,
+        12
+      ],
+      [
+        "train-general-1",
+        0,
+        12
+      ],
+      [
+        "train-long_context-0",
+        0,
+        12
+      ]
+    ],
+    "replay_hash": "f91082d167274a9652919b102a13943f0cef07491f496982606aace96c9ccab5",
+    "replay_spans": [
+      [
+        "train-indic-0",
+        0,
+        12
+      ],
+      [
+        "train-general-1",
+        0,
+        12
+      ],
+      [
+        "train-long_context-0",
+        0,
+        12
+      ]
+    ]
+  },
+  {
+    "batch_id": "batch-0002",
+    "original_hash": "8f191fddad275b1a9cb9c06c450686d7c1afcd10a21eafe25fd9869c5448a6b9",
+    "original_spans": [
+      [
+        "train-reasoning-1",
+        0,
+        12
+      ],
+      [
+        "train-agentic-1",
+        0,
+        12
+      ],
+      [
+        "train-general-2",
+        0,
+        12
+      ]
+    ],
+    "replay_hash": "8f191fddad275b1a9cb9c06c450686d7c1afcd10a21eafe25fd9869c5448a6b9",
+    "replay_spans": [
+      [
+        "train-reasoning-1",
+        0,
+        12
+      ],
+      [
+        "train-agentic-1",
+        0,
+        12
+      ],
+      [
+        "train-general-2",
+        0,
+        12
+      ]
+    ]
+  },
+  {
+    "batch_id": "batch-0003",
+    "original_hash": "83a86856cb83d06b1f839ea9c885039466210e2e99a94fb727c21608a6f2b3bc",
+    "original_spans": [
+      [
+        "train-reasoning-2",
+        0,
+        12
+      ],
+      [
+        "train-indic-1",
+        0,
+        12
+      ],
+      [
+        "train-agentic-2",
+        0,
+        12
+      ]
+    ],
+    "replay_hash": "83a86856cb83d06b1f839ea9c885039466210e2e99a94fb727c21608a6f2b3bc",
+    "replay_spans": [
+      [
+        "train-reasoning-2",
+        0,
+        12
+      ],
+      [
+        "train-indic-1",
+        0,
+        12
+      ],
+      [
+        "train-agentic-2",
+        0,
+        12
+      ]
+    ]
+  }
+]

@@ -1,0 +1,16 @@
+{
+  "cleaning_script_hash": "74d175c518b609eb8a01e99514992b0a582300cb8f500e7704b0b33623b0b9b4",
+  "content_hash": "89e3c27c76b6289a8fe5dc5027c428aa8d83a985715ad1a82d827580996714c5",
+  "doc_count": 1,
+  "id": "validation_validation",
+  "lane": "validation",
+  "languages": [
+    "en"
+  ],
+  "license": "CC0-1.0 (original examples)",
+  "shard_path": "manifests/shards/validation_validation.json",
+  "source": "embedded illustrative corpus",
+  "split": "validation",
+  "token_count": 53,
+  "tokenizer_hash": "4bcdb1e08ee1c9a3e97bf38137a3e612b111e607d52255ab6dc2806ea0e010ad"
+}

@@ -1,0 +1,8 @@
+{
+  "batch_hash": "83a86856cb83d06b1f839ea9c885039466210e2e99a94fb727c21608a6f2b3bc",
+  "branch_offset": 3,
+  "child_model_hash": "4bfabef570023e72ee4ca880ae4420d6d66fe20873b4b95454782f11bc3feeda",
+  "mean_loss": 5.525972724769697,
+  "parent_checkpoint": "checkpoints/before_crash.json",
+  "parent_model_hash": "5785dc613e49425dc3a8ddd00fb2530e1a27f0a6da094c2af6dca23a0c1f1964"
+}

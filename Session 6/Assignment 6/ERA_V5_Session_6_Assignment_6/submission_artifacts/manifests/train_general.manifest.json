@@ -1,0 +1,16 @@
+{
+  "cleaning_script_hash": "74d175c518b609eb8a01e99514992b0a582300cb8f500e7704b0b33623b0b9b4",
+  "content_hash": "07508dde83822ac932859cc65cf04f57d82b7c876bf853d32533a441a96f9abb",
+  "doc_count": 3,
+  "id": "train_general",
+  "lane": "general",
+  "languages": [
+    "en"
+  ],
+  "license": "CC0-1.0 (original examples)",
+  "shard_path": "manifests/shards/train_general.json",
+  "source": "embedded illustrative corpus",
+  "split": "train",
+  "token_count": 182,
+  "tokenizer_hash": "4bcdb1e08ee1c9a3e97bf38137a3e612b111e607d52255ab6dc2806ea0e010ad"
+}
